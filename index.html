@@ -1660,24 +1660,7 @@ footer { background: var(--ink); color: rgba(255,255,255,0.5); padding: 40px 0 3
         <p style="font-size:13px;color:var(--slate-mid);line-height:1.8;margin-top:14px;padding:12px 16px;background:var(--stone);border-radius:var(--r);">💬 不管是短暫刺激還是長期敏感，你感覺到的不舒服都是真的。這裡的目的不是否定你的感受，而是幫你判斷：什麼情況適合用減法保養慢慢調整，什麼情況則需要交給皮膚科醫師處理。</p>
       </div>
 
-      <h3 style="font-family:var(--serif);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:6px;" class="reveal">🔍 三題自我檢測</h3>
-      <p style="font-size:13px;color:var(--slate-mid);margin-bottom:16px;" class="reveal">點擊符合你的描述，看看你目前的狀態</p>
 
-      <div class="selfcheck-grid reveal">
-        <div class="selfcheck-card" onclick="toggleCheck(this,1)">
-          <div class="selfcheck-num">1</div>
-          <div class="selfcheck-text">很容易因為天氣變化、熬夜、情緒就臉紅或發癢？</div>
-        </div>
-        <div class="selfcheck-card" onclick="toggleCheck(this,2)">
-          <div class="selfcheck-num">2</div>
-          <div class="selfcheck-text">常常換新產品就刺痛、紅一塊，甚至起小疹子？</div>
-        </div>
-        <div class="selfcheck-card" onclick="toggleCheck(this,3)">
-          <div class="selfcheck-num">3</div>
-          <div class="selfcheck-text">保養步驟越擦越多，皮膚反而越來越不穩定？</div>
-        </div>
-      </div>
-      <div id="selfcheck-result" class="selfcheck-result tip reveal" style="display:none;"></div>
 
     </div>
 
@@ -3209,33 +3192,7 @@ function switchRoutine(tab) {
   if(target) target.classList.add('on');
 }
 
-// ── SELF CHECK ──
-let checkedCount = 0;
-let checkedItems = new Set();
-function toggleCheck(el, num) {
-  if(el.classList.contains('checked')) {
-    el.classList.remove('checked');
-    checkedItems.delete(num);
-  } else {
-    el.classList.add('checked');
-    checkedItems.add(num);
-  }
-  checkedCount = checkedItems.size;
-  const result = document.getElementById('selfcheck-result');
-  if(!result) return;
-  if(checkedCount === 0) {
-    result.style.display = 'none';
-    return;
-  }
-  result.style.display = 'flex';
-  if(checkedCount >= 2) {
-    result.className = 'selfcheck-result warn';
-    result.innerHTML = '<span style="font-size:18px;flex-shrink:0;">⚠️</span><div><strong>你目前可能處於敏感狀態</strong>，建議採用「減法保養」——精簡步驟、停用刺激性成分，讓皮膚先休息穩定。往下看「日常保養流程」和「成分紅綠燈」，找到適合你的方向。</div>';
-  } else {
-    result.className = 'selfcheck-result ok';
-    result.innerHTML = '<span style="font-size:18px;flex-shrink:0;">😊</span><div><strong>目前敏感狀況不明顯</strong>，但了解正確保養觀念仍然很重要——預防比治療容易。繼續閱讀，讓皮膚維持在最佳狀態。</div>';
-  }
-}
+
 
 // ── READING PROGRESS + POST-TEST NUDGE ──
 (function(){
