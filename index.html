@@ -1572,6 +1572,94 @@ footer { background: var(--ink); color: rgba(255,255,255,0.5); padding: 40px 0 3
           </div>
         </div>
       </details>
+
+      <!-- 狀態分流區塊 -->
+      <div class="reveal" style="margin-bottom:28px;">
+        <h3 style="font-family:var(--serif);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:8px;">暫時性刺激？長期敏感？先分清楚現在的狀態</h3>
+        <p style="font-size:13.5px;color:var(--slate);line-height:1.8;margin-bottom:16px;">只要皮膚一紅、一癢，很多人就說自己是「敏感肌」。但有的屬於短暫的刺激或過敏反應，有的則是長期都很容易不舒服的敏感膚況。分清楚狀態，才能選對處理方式，也比較不會延誤就醫時間。</p>
+
+        <div style="border:1.5px solid #E0EBF0;border-radius:var(--r-lg);overflow:hidden;font-size:13px;">
+          <!-- 表頭 -->
+          <div style="display:grid;grid-template-columns:1.2fr 1.8fr 1.8fr;background:var(--stone);border-bottom:1.5px solid #E0EBF0;">
+            <div style="padding:10px 14px;font-weight:700;color:var(--slate-mid);font-size:11px;text-transform:uppercase;letter-spacing:.06em;">目前的狀態</div>
+            <div style="padding:10px 14px;font-weight:700;color:var(--slate-mid);font-size:11px;text-transform:uppercase;letter-spacing:.06em;border-left:1px solid #E0EBF0;">比較常見的情形</div>
+            <div style="padding:10px 14px;font-weight:700;color:var(--slate-mid);font-size:11px;text-transform:uppercase;letter-spacing:.06em;border-left:1px solid #E0EBF0;">建議怎麼做</div>
+          </div>
+
+          <!-- 列一 -->
+          <div style="display:grid;grid-template-columns:1.2fr 1.8fr 1.8fr;border-bottom:1px solid #E8EEF2;">
+            <div style="padding:14px;display:flex;align-items:flex-start;gap:8px;">
+              <span style="font-size:15px;flex-shrink:0;margin-top:1px;">⚡</span>
+              <div>
+                <div style="font-weight:700;color:var(--teal-dark);margin-bottom:2px;">暫時性刺激</div>
+                <div style="font-size:11px;color:var(--slate-mid);">短暫反應</div>
+              </div>
+            </div>
+            <div style="padding:14px;color:var(--slate);line-height:1.7;border-left:1px solid #E8EEF2;">用到某一款保養品、洗劑或髮品後，局部出現紅、癢、刺，一段時間內慢慢好轉。</div>
+            <div style="padding:14px;color:var(--slate);line-height:1.7;border-left:1px solid #E8EEF2;">先停用該產品，記錄是哪一類成分。之後選擇產品時特別留意，也可以和皮膚科醫師討論是否需要做過敏檢測。</div>
+          </div>
+
+          <!-- 列二 -->
+          <div style="display:grid;grid-template-columns:1.2fr 1.8fr 1.8fr;border-bottom:1px solid #E8EEF2;">
+            <div style="padding:14px;display:flex;align-items:flex-start;gap:8px;">
+              <span style="font-size:15px;flex-shrink:0;margin-top:1px;">🌡️</span>
+              <div>
+                <div style="font-weight:700;color:var(--gold);margin-bottom:2px;">長期敏感狀態</div>
+                <div style="font-size:11px;color:var(--slate-mid);">容易不穩定</div>
+              </div>
+            </div>
+            <div style="padding:14px;color:var(--slate);line-height:1.7;border-left:1px solid #E8EEF2;">不只一個產品會刺激，遇到風、溫差、清潔或壓力大也常紅、癢、緊，感覺皮膚很脆弱。</div>
+            <div style="padding:14px;color:var(--slate);line-height:1.7;border-left:1px solid #E8EEF2;">建議先回到「減法保養」：溫和清潔、單純保濕修護、防曬，減少刺激，讓屏障有時間修復。</div>
+          </div>
+
+          <!-- 列三 -->
+          <div style="display:grid;grid-template-columns:1.2fr 1.8fr 1.8fr;">
+            <div style="padding:14px;display:flex;align-items:flex-start;gap:8px;">
+              <span style="font-size:15px;flex-shrink:0;margin-top:1px;">🏥</span>
+              <div>
+                <div style="font-weight:700;color:var(--accent);margin-bottom:2px;">需要就醫確認</div>
+                <div style="font-size:11px;color:var(--slate-mid);">不只是敏感</div>
+              </div>
+            </div>
+            <div style="padding:14px;color:var(--slate);line-height:1.7;border-left:1px solid #E8EEF2;">出現明顯水泡、滲液、厚痂，或大範圍紅腫、灼熱，反覆發作，甚至伴隨發燒或全身不適。</div>
+            <div style="padding:14px;line-height:1.7;border-left:1px solid #E8EEF2;background:var(--accent-light);">
+              <span style="color:var(--accent);font-weight:700;">請盡快就醫</span><span style="color:#7A3028;">，讓皮膚科醫師確認是否為接觸性皮膚炎、感染、酒糟或其他皮膚疾病。不建議自己只靠保養品處理。</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 手機版：表格改為卡片 -->
+        <style>
+          @media (max-width: 560px) {
+            .state-table { display: none !important; }
+            .state-cards { display: flex !important; }
+          }
+          @media (min-width: 561px) {
+            .state-cards { display: none !important; }
+          }
+        </style>
+
+        <div class="state-cards" style="display:none;flex-direction:column;gap:10px;margin-top:10px;">
+          <div style="background:var(--sky);border-radius:var(--r);padding:14px 16px;">
+            <div style="font-weight:700;color:var(--teal-dark);margin-bottom:4px;">⚡ 暫時性刺激</div>
+            <div style="font-size:13px;color:var(--slate);margin-bottom:6px;line-height:1.7;">用到某款產品後局部出現紅、癢、刺，一段時間內好轉。</div>
+            <div style="font-size:12px;color:var(--teal-dark);font-weight:500;">→ 停用該產品，記錄成分，必要時諮詢醫師。</div>
+          </div>
+          <div style="background:var(--gold-light);border-radius:var(--r);padding:14px 16px;">
+            <div style="font-weight:700;color:var(--gold);margin-bottom:4px;">🌡️ 長期敏感狀態</div>
+            <div style="font-size:13px;color:var(--slate);margin-bottom:6px;line-height:1.7;">不只產品，風、溫差、壓力也常讓皮膚紅癢緊繃，感覺很脆弱。</div>
+            <div style="font-size:12px;color:#7A4E0A;font-weight:500;">→ 回到減法保養：溫和清潔＋保濕修護＋防曬。</div>
+          </div>
+          <div style="background:var(--accent-light);border-radius:var(--r);padding:14px 16px;">
+            <div style="font-weight:700;color:var(--accent);margin-bottom:4px;">🏥 需要就醫確認</div>
+            <div style="font-size:13px;color:var(--slate);margin-bottom:6px;line-height:1.7;">水泡、滲液、厚痂、大範圍紅腫、反覆發作或伴隨發燒。</div>
+            <div style="font-size:12px;color:var(--accent);font-weight:700;">→ 請盡快就醫，交給皮膚科醫師判斷。</div>
+          </div>
+        </div>
+
+        <p style="font-size:13px;color:var(--slate-mid);line-height:1.8;margin-top:14px;padding:12px 16px;background:var(--stone);border-radius:var(--r);">💬 不管是短暫刺激還是長期敏感，你感覺到的不舒服都是真的。這裡的目的不是否定你的感受，而是幫你判斷：什麼情況適合用減法保養慢慢調整，什麼情況則需要交給皮膚科醫師處理。</p>
+      </div>
+
       <h3 style="font-family:var(--serif);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:6px;" class="reveal">🔍 三題自我檢測</h3>
       <p style="font-size:13px;color:var(--slate-mid);margin-bottom:16px;" class="reveal">點擊符合你的描述，看看你目前的狀態</p>
 
@@ -3266,11 +3354,6 @@ const firstHeader = document.querySelector('.acc-header');
 if (firstHeader) {
   firstHeader.classList.add('open');
   firstHeader.nextElementSibling.style.maxHeight = firstHeader.nextElementSibling.scrollHeight + 'px';
-}
-</script>
-</body>
-</html>
-// Open first by default
 }
 </script>
 </body>
