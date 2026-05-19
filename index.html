@@ -1,0 +1,3272 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>你的保養方式正確嗎？敏感肌修護衛教 | NUTC 美容系</title>
+<meta name="description" content="你每天的保養習慣，正在傷害你的皮膚嗎？5大主題互動衛教、皮膚屏障圖解、症狀決策工具，破除最常見的保養迷思。國立臺中科技大學美容系專題研究。">
+<meta name="keywords" content="敏感肌,皮膚屏障,保養迷思,神經醯胺,防曬,衛教,NUTC,臺中科技大學">
+<meta name="author" content="孫嫚庭, 國立臺中科技大學美容系">
+<meta property="og:type" content="website">
+<meta property="og:title" content="你的保養習慣正在傷害皮膚嗎？— 敏感肌修護衛教平台">
+<meta property="og:description" content="60秒習慣檢測 × 皮膚屏障互動圖解 × 症狀決策工具。5大主題，破除最常見的保養迷思。NUTC美容系研究。">
+<meta property="og:image" content="https://og-image.vercel.app/%E6%95%8F%E6%84%9F%E8%82%8C%E4%BF%AE%E8%AD%B7%E8%A1%9B%E6%95%99%E5%B9%B3%E5%8F%B0?theme=light&md=1&fontSize=80px&images=https://via.placeholder.com/1200x630/2A7F9E/FFFFFF">
+<meta property="og:url" content="https://sites.google.com/view/sensitiveskinbeauty">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="你的保養習慣正在傷害皮膚嗎？">
+<meta name="twitter:description" content="60秒習慣檢測 × 皮膚屏障圖解 × 症狀決策。NUTC敏感肌衛教平台。">
+<link rel="canonical" href="https://sites.google.com/view/sensitiveskinbeauty">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "NUTC 敏感肌修護衛教平台",
+  "description": "國立臺中科技大學美容系敏感肌修護衛教教材研究平台",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "國立臺中科技大學美容系"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sky: #EBF4F8;
+  --sky-mid: #C8E2EE;
+  --teal: #2A7F9E;
+  --teal-dark: #1A5F78;
+  --teal-deep: #0E3E52;
+  --accent: #E05C44;
+  --accent-light: #FDF0ED;
+  --gold: #C4933A;
+  --gold-light: #FDF6E9;
+  --green: #2D7A56;
+  --green-light: #EBF6F0;
+  --slate: #3D4F5C;
+  --slate-mid: #6B7F8C;
+  --slate-light: #A8B8C2;
+  --stone: #F5F3F0;
+  --white: #FFFFFF;
+  --ink: #1C2B35;
+  --serif: 'Noto Serif TC', serif;
+  --sans: 'Noto Sans TC', sans-serif;
+  --r: 12px;
+  --r-lg: 20px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── UTILITY ── */
+.container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+.container-wide { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+/* ── REVEAL ANIMATION ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: none; }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ── NAVBAR ── */
+#nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(42,127,158,0.12);
+  transition: all 0.3s;
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  gap: 20px;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--teal-deep);
+}
+.nav-logo-dot {
+  width: 28px; height: 28px;
+  background: var(--teal);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.nav-logo-dot svg { width: 14px; height: 14px; fill: white; }
+.nav-logo-text { font-size: 13px; font-weight: 700; letter-spacing: 0.04em; line-height: 1.3; }
+.nav-links { display: flex; gap: 4px; }
+.nav-links a {
+  color: var(--slate);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.nav-links a:hover { background: var(--sky); color: var(--teal); }
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--teal);
+  color: white !important;
+  padding: 8px 16px !important;
+  border-radius: 99px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-decoration: none;
+  transition: background 0.2s !important;
+  flex-shrink: 0;
+}
+.nav-cta:hover { background: var(--teal-dark) !important; }
+
+/* 手機版：隱藏桌機連結和後測按鈕，只顯示漢堡 */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-cta { display: none !important; }
+}
+.nav-mobile-btn {
+  display: none;
+  background: none;
+  border: 1.5px solid var(--sky-mid);
+  border-radius: 8px;
+  padding: 7px 12px;
+  cursor: pointer;
+  color: var(--teal-dark);
+  font-size: 13px;
+  font-weight: 700;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.nav-mobile-btn:hover { background: var(--sky); }
+@media (max-width: 768px) {
+  .nav-mobile-btn { display: flex; }
+}
+.nav-mobile-menu {
+  display: none;
+  position: fixed;
+  top: 60px; left: 0; right: 0;
+  background: white;
+  border-bottom: 1px solid #E8EEF2;
+  z-index: 99;
+  padding: 8px 16px 16px;
+  flex-direction: column;
+  gap: 2px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.nav-mobile-menu.open { display: flex; }
+.nav-mobile-menu a {
+  color: var(--slate);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 11px 14px;
+  border-radius: 10px;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-mobile-menu a:hover,
+.nav-mobile-menu a:active { background: var(--sky); color: var(--teal); }
+.nav-mobile-menu .menu-cta {
+  background: var(--teal);
+  color: white !important;
+  justify-content: center;
+  font-weight: 700;
+  margin-top: 6px;
+  border-radius: 99px;
+}
+.nav-mobile-menu .menu-cta:hover { background: var(--teal-dark) !important; }
+.nav-mobile-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 98;
+  background: rgba(0,0,0,0.2);
+}
+.nav-mobile-overlay.open { display: block; }
+
+/* ── HERO ── */
+#hero {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+#hero .container {
+  position: relative;
+  z-index: 1;
+}
+.hero-bg-shape {
+  position: absolute;
+  top: -60px; right: -80px;
+  width: 520px; height: 520px;
+  background: radial-gradient(ellipse at center, var(--sky) 0%, rgba(235,244,248,0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .hero-bg-shape {
+    width: 260px; height: 260px;
+    top: 0; right: -40px;
+    opacity: 0.5;
+  }
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--teal);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.hero-eyebrow span { width: 28px; height: 1.5px; background: var(--teal); display: block; }
+.hero-h1 {
+  font-family: var(--serif);
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 8px;
+  max-width: 680px;
+}
+.hero-h1 em {
+  font-style: normal;
+  color: var(--teal);
+}
+.hero-subline {
+  font-size: 14px;
+  color: var(--slate-mid);
+  font-weight: 400;
+  margin-bottom: 24px;
+  letter-spacing: 0.02em;
+}
+.hero-tagline {
+  font-size: 17px;
+  color: var(--slate);
+  line-height: 1.8;
+  max-width: 560px;
+  margin-bottom: 36px;
+}
+.hero-tagline strong { color: var(--teal-dark); font-weight: 700; }
+.hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--teal);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 99px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 4px 16px rgba(42,127,158,0.25);
+}
+.btn-primary:hover { background: var(--teal-dark); transform: translateY(-1px); }
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--slate);
+  padding: 14px 24px;
+  border-radius: 99px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1.5px solid var(--sky-mid);
+  transition: all 0.2s;
+}
+.btn-ghost:hover { border-color: var(--teal); color: var(--teal); }
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid #E8EEF2;
+  padding-top: 24px;
+}
+.hero-stat {
+  padding: 0 20px 0 0;
+  border-right: 1px solid #E8EEF2;
+}
+.hero-stat:last-child { border-right: none; padding-right: 0; }
+@media (max-width: 400px) {
+  .hero-stats { grid-template-columns: 1fr 1fr 1fr; gap: 0; }
+  .hero-stat { padding: 0 12px 0 0; }
+}
+.hero-stat-num {
+  font-family: var(--serif);
+  font-size: clamp(22px, 5vw, 28px);
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1.1;
+}
+.hero-stat-label {
+  font-size: 12px;
+  color: var(--slate-mid);
+  margin-top: 2px;
+}
+/* Progress bar for hero intro feel */
+.hero-progress {
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(to right, var(--teal) 0%, var(--sky-mid) 100%);
+  opacity: 0.4;
+}
+
+/* ── SECTION LABELS ── */
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-label::before {
+  content: '';
+  width: 20px; height: 1.5px;
+  background: var(--teal);
+  display: block;
+}
+.section-h2 {
+  font-family: var(--serif);
+  font-size: clamp(22px, 3.5vw, 32px);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+.section-desc {
+  font-size: 15px;
+  color: var(--slate-mid);
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+/* ── DIVIDER ── */
+.section-divider { height: 1px; background: #E8EEF2; }
+
+/* ── CONCEPT SECTION (敏感 vs 過敏) ── */
+#concept { padding: 80px 0; background: var(--white); }
+.concept-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+@media (max-width: 600px) { .concept-grid { grid-template-columns: 1fr; } }
+.concept-card {
+  border: 1.5px solid #E0EBF0;
+  border-radius: var(--r-lg);
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+.concept-card:hover { box-shadow: 0 8px 32px rgba(42,127,158,0.1); }
+.concept-card-accent {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+}
+.concept-card.sensitive .concept-card-accent { background: linear-gradient(to right, var(--teal), var(--sky-mid)); }
+.concept-card.allergy .concept-card-accent { background: linear-gradient(to right, var(--accent), #f0a090); }
+.concept-icon {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+.concept-card.sensitive .concept-icon { background: var(--sky); }
+.concept-card.allergy .concept-icon { background: var(--accent-light); }
+.concept-card h3 {
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.concept-card .tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 99px;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+.concept-card.sensitive .tag { background: var(--sky); color: var(--teal-dark); }
+.concept-card.allergy .tag { background: var(--accent-light); color: var(--accent); }
+.concept-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  align-items: flex-start;
+}
+.concept-row-icon {
+  width: 28px; height: 28px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px;
+}
+.concept-card.sensitive .concept-row-icon { background: var(--sky); }
+.concept-card.allergy .concept-row-icon { background: var(--accent-light); }
+.concept-row-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--slate-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+.concept-row-text {
+  font-size: 13.5px;
+  color: var(--slate);
+  line-height: 1.65;
+}
+
+/* VS divider */
+.concept-vs {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--slate-light);
+  letter-spacing: 0.05em;
+}
+@media (min-width: 601px) {
+  .concept-vs {
+    display: flex;
+    position: relative;
+  }
+  .concept-grid { position: relative; }
+  .concept-grid::after {
+    content: 'VS';
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px; height: 36px;
+    background: white;
+    border: 1.5px solid #E0EBF0;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--slate-light);
+    z-index: 2;
+  }
+}
+
+/* ── CHART SECTION ── */
+#quiz { padding: 80px 0; background: var(--stone); }
+.quiz-header { margin-bottom: 40px; }
+.chart-wrap { background: white; border-radius: var(--r-lg); padding: 28px 32px; margin-bottom: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.04); }
+.chart-title { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+.chart-subtitle { font-size: 12px; color: var(--slate-mid); margin-bottom: 20px; }
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.bar-row-label {
+  font-size: 12px;
+  color: var(--slate);
+  min-width: 52px;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+.bar-track {
+  flex: 1;
+  height: 22px;
+  background: #F0F4F7;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  width: 0;
+  transition: width 1.4s cubic-bezier(0.4,0,0.2,1);
+  white-space: nowrap;
+}
+.bar-fill.teal { background: var(--teal); }
+.bar-fill.accent { background: var(--accent); }
+.bar-fill.gold { background: var(--gold); }
+.bar-fill.mid { background: #5B8FA8; }
+.bar-note {
+  font-size: 11px;
+  color: var(--slate-mid);
+  min-width: 40px;
+  flex-shrink: 0;
+  text-align: right;
+}
+.myths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+.myth-pill {
+  background: white;
+  border-radius: var(--r);
+  padding: 18px 20px;
+  border: 1px solid #E8EEF2;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+.myth-pill:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+.myth-num {
+  width: 28px; height: 28px;
+  border-radius: 8px;
+  background: var(--teal);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.myth-num.red { background: var(--accent); }
+.myth-num.gold { background: var(--gold); }
+.myth-num.mid { background: #5B8FA8; }
+.myth-content {}
+.myth-title { font-size: 13px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+.myth-wrong { font-size: 12px; color: #c04438; margin-bottom: 4px; }
+.myth-right { font-size: 12px; color: var(--green); line-height: 1.6; }
+
+/* ── FIVE THEMES (Accordion) ── */
+#themes { padding: 80px 0; background: var(--white); }
+.themes-intro { margin-bottom: 40px; }
+.theme-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.theme-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1.5px solid #E0EBF0;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: white;
+  color: var(--slate);
+}
+.theme-tab:hover { border-color: var(--teal); color: var(--teal); }
+.theme-tab.active { background: var(--teal); border-color: var(--teal); color: white; }
+.theme-tab .tab-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.6;
+}
+.accordion {
+  border: 1px solid #E0EBF0;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.acc-item { border-bottom: 1px solid #E8EEF2; }
+.acc-item:last-child { border-bottom: none; }
+.acc-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+  background: white;
+}
+.acc-header:hover { background: var(--sky); }
+.acc-header.open { background: var(--sky); }
+.acc-icon-wrap {
+  width: 38px; height: 38px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-size: 17px;
+}
+.acc-title-group { flex: 1; }
+.acc-title { font-size: 15px; font-weight: 700; color: var(--ink); }
+.acc-meta { font-size: 12px; color: var(--slate-mid); margin-top: 2px; }
+.acc-arrow {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #F0F4F7;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+.acc-header.open .acc-arrow { transform: rotate(180deg); background: var(--teal); }
+.acc-header.open .acc-arrow svg path { stroke: white; }
+.acc-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.acc-body-inner { padding: 0 24px 24px; }
+.vs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+@media (max-width: 560px) { .vs-grid { grid-template-columns: 1fr; } }
+.vs-wrong {
+  background: #FEF4F3;
+  border: 1px solid #FBDED9;
+  border-radius: var(--r);
+  padding: 16px;
+}
+.vs-right {
+  background: var(--green-light);
+  border: 1px solid #C8E8D9;
+  border-radius: var(--r);
+  padding: 16px;
+}
+.vs-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  display: flex; align-items: center; gap: 6px;
+}
+.vs-wrong .vs-label { color: var(--accent); }
+.vs-right .vs-label { color: var(--green); }
+.vs-text { font-size: 13.5px; line-height: 1.7; }
+.vs-wrong .vs-text { color: #7A3028; }
+.vs-right .vs-text { color: #1E5038; }
+.ref-box {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: var(--stone);
+  border-radius: var(--r);
+  padding: 12px 14px;
+}
+.ref-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+.ref-text { font-size: 12px; color: var(--slate-mid); line-height: 1.65; }
+.ref-text strong { color: var(--slate); }
+.acc-rule-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--teal);
+  font-weight: 700;
+  background: var(--sky);
+  padding: 5px 12px;
+  border-radius: 99px;
+}
+
+/* Theme colors */
+.theme-1 .acc-icon-wrap { background: #E8F4FA; }
+.theme-2 .acc-icon-wrap { background: #EAF6F0; }
+.theme-3 .acc-icon-wrap { background: #F3EEF9; }
+.theme-4 .acc-icon-wrap { background: #FEF9EC; }
+.theme-5 .acc-icon-wrap { background: #FEF2F0; }
+
+/* ── GOLDEN RULES ── */
+#rules { padding: 80px 0; background: var(--teal-deep); }
+#rules .section-label { color: rgba(255,255,255,0.5); }
+#rules .section-label::before { background: rgba(255,255,255,0.3); }
+#rules .section-h2 { color: white; }
+#rules .section-desc { color: rgba(255,255,255,0.6); }
+.rules-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 48px;
+  position: relative;
+}
+.rules-timeline::before {
+  content: '';
+  position: absolute;
+  top: 44px;
+  left: 12.5%; right: 12.5%;
+  height: 2px;
+  background: linear-gradient(to right, #E24B4A, #3B8BD4, #2D7A56, #C4933A);
+  opacity: 0.5;
+}
+@media (max-width: 640px) {
+  .rules-timeline { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .rules-timeline::before { display: none; }
+}
+.rule-step { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 12px; position: relative; }
+.rule-orb {
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px;
+  font-size: 32px;
+  position: relative;
+  z-index: 1;
+}
+.rule-step-1 .rule-orb { background: rgba(226,75,74,0.15); border: 2px solid rgba(226,75,74,0.3); }
+.rule-step-2 .rule-orb { background: rgba(59,139,212,0.15); border: 2px solid rgba(59,139,212,0.3); }
+.rule-step-3 .rule-orb { background: rgba(45,122,86,0.15); border: 2px solid rgba(45,122,86,0.3); }
+.rule-step-4 .rule-orb { background: rgba(196,147,58,0.15); border: 2px solid rgba(196,147,58,0.3); }
+.rule-code {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin-bottom: 6px;
+}
+.rule-step-1 .rule-code { color: #E24B4A; }
+.rule-step-2 .rule-code { color: #3B8BD4; }
+.rule-step-3 .rule-code { color: #2D7A56; }
+.rule-step-4 .rule-code { color: #C4933A; }
+.rule-name { font-family: var(--serif); font-size: 17px; font-weight: 700; color: white; margin-bottom: 8px; }
+.rule-desc { font-size: 12.5px; color: rgba(255,255,255,0.55); line-height: 1.65; }
+
+.rules-note {
+  margin-top: 48px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--r-lg);
+  padding: 20px 24px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.rules-note-icon { font-size: 18px; flex-shrink: 0; }
+.rules-note-text { font-size: 13.5px; color: rgba(255,255,255,0.65); line-height: 1.7; }
+.rules-note-text strong { color: white; }
+
+/* ── ABOUT SECTION ── */
+#about { padding: 72px 0; background: var(--stone); }
+.about-card {
+  background: white;
+  border: 1px solid #E0EBF0;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+.about-card-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid #E8EEF2;
+}
+@media (max-width: 560px) {
+  .about-card-top { grid-template-columns: 1fr; }
+  .about-card-cell { border-right: none !important; border-bottom: 1px solid #E8EEF2; }
+  .about-card-cell:last-child { border-bottom: none; }
+}
+.about-card-cell {
+  padding: 18px 20px;
+  border-right: 1px solid #E8EEF2;
+}
+.about-card-cell:last-child { border-right: none; }
+.about-cell-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 5px;
+}
+.about-cell-value {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.4;
+}
+.about-cell-sub {
+  font-size: 12px;
+  color: var(--slate-mid);
+  margin-top: 2px;
+}
+.about-card-body {
+  padding: 24px 24px 20px;
+  border-bottom: 1px solid #E8EEF2;
+}
+.about-card-body p {
+  font-size: 14px;
+  color: var(--slate);
+  line-height: 1.85;
+}
+.ethics-box {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 16px 24px;
+  font-size: 13px;
+  color: var(--teal-dark);
+  line-height: 1.7;
+}
+.ethics-box strong { font-weight: 700; }
+
+
+/* ── BARRIER DIAGRAM ── */
+#barrier { padding: 72px 0; background: var(--white); }
+.barrier-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+.barrier-tab {
+  padding: 7px 18px; border-radius: 99px; font-size: 13px; font-weight: 700;
+  border: 1.5px solid #E0EBF0; cursor: pointer; transition: all .2s;
+  background: white; color: var(--slate); font-family: var(--sans);
+}
+.barrier-tab:hover { border-color: var(--teal); color: var(--teal); }
+.barrier-tab.on { background: var(--teal); border-color: var(--teal); color: white; }
+.barrier-svg-wrap { width: 100%; overflow: hidden; border: 1.5px solid #E0EBF0; border-radius: var(--r-lg); background: white; }
+.barrier-info {
+  margin-top: 16px; background: var(--sky); border-radius: var(--r); padding: 16px 20px;
+  transition: opacity .3s;
+}
+.barrier-info-tag {
+  display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 10px;
+  border-radius: 99px; margin-bottom: 8px;
+}
+.barrier-info-tag.ok { background: var(--green-light); color: var(--green); }
+.barrier-info-tag.bad { background: var(--accent-light); color: var(--accent); }
+.barrier-info-title { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+.barrier-info-body { font-size: 13px; color: var(--slate); line-height: 1.7; }
+
+/* ── DECISION TREE ── */
+#decision { padding: 72px 0; background: var(--stone); }
+.dt-wrap { max-width: 560px; margin: 0 auto; }
+.dt-breadcrumb { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; margin-bottom: 12px; min-height: 22px; }
+.dt-bc-item { font-size: 11px; color: var(--slate-mid); padding: 2px 8px; background: white; border-radius: 99px; border: 1px solid #E8EEF2; }
+.dt-bc-sep { font-size: 11px; color: var(--slate-light); }
+.dt-q-box { background: white; border: 1.5px solid #E0EBF0; border-radius: var(--r-lg); padding: 20px 24px; margin-bottom: 12px; }
+.dt-q-label { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--teal); margin-bottom: 6px; }
+.dt-q-text { font-size: 16px; font-weight: 700; color: var(--ink); line-height: 1.5; font-family: var(--serif); }
+.dt-opts { display: flex; flex-direction: column; gap: 8px; }
+.dt-opt {
+  display: flex; align-items: center; gap: 12px; padding: 12px 14px;
+  border: 1.5px solid #E0EBF0; border-radius: var(--r); cursor: pointer;
+  background: white; text-align: left; transition: all .15s; width: 100%;
+  font-family: var(--sans);
+}
+.dt-opt:hover { border-color: var(--teal); background: var(--sky); }
+.dt-opt-icon { width: 32px; height: 32px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; background: var(--stone); }
+.dt-opt-label { font-size: 13.5px; color: var(--ink); font-weight: 500; line-height: 1.4; }
+.dt-opt-sub { font-size: 12px; color: var(--slate-mid); margin-top: 2px; }
+.dt-result { border-radius: var(--r-lg); padding: 20px 24px; margin-bottom: 16px; }
+.dt-result.green { background: var(--green-light); border: 1.5px solid #C8E8D9; }
+.dt-result.amber { background: var(--gold-light); border: 1.5px solid #F5D89A; }
+.dt-result.red { background: var(--accent-light); border: 1.5px solid #FBDED9; }
+.dt-r-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.dt-r-emoji { font-size: 22px; line-height: 1; }
+.dt-r-title { font-size: 15px; font-weight: 700; }
+.dt-result.green .dt-r-title { color: var(--green); }
+.dt-result.amber .dt-r-title { color: var(--gold); }
+.dt-result.red .dt-r-title { color: var(--accent); }
+.dt-r-steps { display: flex; flex-direction: column; gap: 8px; }
+.dt-r-step { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--slate); line-height: 1.65; }
+.dt-r-step-num { min-width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.dt-result.green .dt-r-step-num { background: var(--green-light); color: var(--green); border: 1px solid #C8E8D9; }
+.dt-result.amber .dt-r-step-num { background: var(--gold-light); color: var(--gold); border: 1px solid #F5D89A; }
+.dt-result.red .dt-r-step-num { background: var(--accent-light); color: var(--accent); border: 1px solid #FBDED9; }
+.dt-r-step strong { color: var(--ink); }
+.dt-btn-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.dt-btn-restart { border: 1.5px solid #E0EBF0; background: none; color: var(--slate); padding: 10px 18px; border-radius: 99px; font-size: 13px; cursor: pointer; font-family: var(--sans); transition: all .2s; }
+.dt-btn-restart:hover { border-color: var(--teal); color: var(--teal); }
+.dt-btn-see { background: var(--teal); color: white; border: none; padding: 10px 18px; border-radius: 99px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: var(--sans); transition: opacity .2s; }
+.dt-btn-see:hover { opacity: .85; }
+@keyframes dtFadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:none} }
+.dt-step { animation: dtFadeUp .3s ease forwards; }
+
+
+/* ── POST-TEST NUDGE ── */
+#posttest-nudge {
+  display: none;
+  position: fixed;
+  bottom: 88px; right: 24px;
+  z-index: 98;
+  background: var(--teal-deep);
+  color: white;
+  border-radius: var(--r-lg);
+  padding: 14px 18px;
+  max-width: 260px;
+  box-shadow: 0 8px 32px rgba(14,62,82,0.35);
+  animation: nudgeIn .4s cubic-bezier(.34,1.56,.64,1) forwards;
+}
+@keyframes nudgeIn {
+  from { opacity:0; transform: translateY(20px) scale(.95); }
+  to   { opacity:1; transform: none; }
+}
+#posttest-nudge .nudge-close {
+  position:absolute; top:8px; right:10px;
+  background:none; border:none; color:rgba(255,255,255,.5);
+  font-size:16px; cursor:pointer; line-height:1; padding:2px;
+}
+#posttest-nudge .nudge-close:hover { color:white; }
+#posttest-nudge p { font-size:13px; line-height:1.6; margin-bottom:10px; }
+#posttest-nudge p strong { font-weight:700; }
+#posttest-nudge a {
+  display:block; background:white; color:var(--teal-dark);
+  text-align:center; padding:9px 14px; border-radius:99px;
+  font-size:13px; font-weight:700; text-decoration:none;
+  transition:opacity .2s;
+}
+#posttest-nudge a:hover { opacity:.88; }
+
+/* ── READING PROGRESS BAR ── */
+#read-progress {
+  position: fixed;
+  top: 60px; left: 0; right: 0;
+  height: 2px;
+  z-index: 99;
+  background: var(--sky-mid);
+}
+#read-progress-fill {
+  height: 100%;
+  background: var(--teal);
+  width: 0%;
+  transition: width .1s linear;
+}
+
+
+/* ── INTRO SECTION (敏感肌入門) ── */
+#intro-guide { padding: 80px 0; background: var(--white); }
+
+/* 自我檢測 */
+@media (max-width: 560px) {
+  #guide-what .intro-two-col { grid-template-columns: 1fr !important; }
+}
+.selfcheck-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 28px 0;
+}
+@media (max-width: 600px) { .selfcheck-grid { grid-template-columns: 1fr; } }
+.selfcheck-card {
+  background: var(--stone);
+  border-radius: var(--r);
+  padding: 18px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all .2s;
+  user-select: none;
+}
+.selfcheck-card:hover { border-color: var(--teal); }
+.selfcheck-card.checked { background: var(--sky); border-color: var(--teal); }
+.selfcheck-num {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: white;
+  border: 1.5px solid #E0EBF0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; color: var(--slate-mid);
+  flex-shrink: 0;
+  transition: all .2s;
+}
+.selfcheck-card.checked .selfcheck-num {
+  background: var(--teal); border-color: var(--teal); color: white;
+}
+.selfcheck-text { font-size: 13.5px; color: var(--slate); line-height: 1.6; font-weight: 500; }
+.selfcheck-result {
+  border-radius: var(--r);
+  padding: 14px 18px;
+  font-size: 13.5px;
+  line-height: 1.7;
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.selfcheck-result.warn { background: var(--gold-light); color: #7A5010; }
+.selfcheck-result.ok   { background: var(--green-light); color: #1E5038; }
+.selfcheck-result.tip  { background: var(--sky); color: var(--teal-dark); }
+
+/* 日常流程卡 */
+.routine-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.rtab {
+  padding: 8px 18px;
+  border-radius: 99px;
+  font-size: 13px;
+  font-weight: 700;
+  border: 1.5px solid #E0EBF0;
+  cursor: pointer;
+  transition: all .2s;
+  background: white;
+  color: var(--slate);
+  font-family: var(--sans);
+}
+.rtab:hover { border-color: var(--teal); color: var(--teal); }
+.rtab.on { background: var(--teal); border-color: var(--teal); color: white; }
+.routine-panel { display: none; }
+.routine-panel.on { display: block; }
+.routine-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rstep {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--stone);
+  border-radius: var(--r);
+  padding: 14px 16px;
+}
+.rstep-num {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.rstep-icon { font-size: 18px; flex-shrink: 0; }
+.rstep-body {}
+.rstep-title { font-size: 14px; font-weight: 700; color: var(--ink); }
+.rstep-sub { font-size: 12px; color: var(--slate-mid); margin-top: 2px; line-height: 1.5; }
+.sos-box {
+  background: var(--accent-light);
+  border: 1.5px solid #FBDED9;
+  border-radius: var(--r);
+  padding: 16px 18px;
+  margin-top: 12px;
+}
+.sos-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sos-steps {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.sos-step {
+  background: white;
+  border: 1px solid #FBDED9;
+  border-radius: 99px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7A3028;
+}
+.sos-arrow { color: var(--accent); font-weight: 700; font-size: 14px; }
+
+/* 成分紅綠燈 */
+.traffic-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+@media (max-width: 640px) { .traffic-grid { grid-template-columns: 1fr; } }
+.traffic-card {
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1.5px solid transparent;
+}
+.traffic-head {
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.traffic-dot {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.traffic-dot.green { background: #2D9A5C; }
+.traffic-dot.yellow { background: #D4861A; }
+.traffic-dot.red { background: #E05C44; }
+.traffic-head-title { font-size: 14px; font-weight: 700; }
+.traffic-head-sub { font-size: 11px; margin-top: 1px; }
+.traffic-body { padding: 0 18px 16px; }
+.ingredient-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 99px;
+  margin: 3px;
+}
+.traffic-card.green {
+  background: #F0FAF4;
+  border-color: #C8E8D9;
+}
+.traffic-card.green .traffic-head { background: #DDF2E6; }
+.traffic-card.green .traffic-head-title { color: #1A6E3F; }
+.traffic-card.green .traffic-head-sub { color: #2D8A52; }
+.traffic-card.green .ingredient-tag { background: #DDF2E6; color: #1A6E3F; }
+
+.traffic-card.yellow {
+  background: var(--gold-light);
+  border-color: #F5D89A;
+}
+.traffic-card.yellow .traffic-head { background: #FAEBD5; }
+.traffic-card.yellow .traffic-head-title { color: #7A4E0A; }
+.traffic-card.yellow .traffic-head-sub { color: #9A6512; }
+.traffic-card.yellow .ingredient-tag { background: #FAEBD5; color: #7A4E0A; }
+
+.traffic-card.red {
+  background: var(--accent-light);
+  border-color: #FBDED9;
+}
+.traffic-card.red .traffic-head { background: #FDE8E4; }
+.traffic-card.red .traffic-head-title { color: #8A2010; }
+.traffic-card.red .traffic-head-sub { color: var(--accent); }
+.traffic-card.red .ingredient-tag { background: #FDE8E4; color: #8A2010; }
+
+.traffic-memo {
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+.traffic-card.green .traffic-memo { background: #DDF2E6; color: #1A6E3F; }
+.traffic-card.yellow .traffic-memo { background: #FAEBD5; color: #7A4E0A; }
+.traffic-card.red .traffic-memo { background: #FDE8E4; color: #8A2010; }
+
+/* 三大錯誤 */
+.mistakes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+.mistake-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: white;
+  border: 1.5px solid #E0EBF0;
+  border-radius: var(--r-lg);
+  padding: 20px;
+  transition: box-shadow .2s;
+}
+.mistake-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.06); }
+.mistake-icon-wrap {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+  background: var(--accent-light);
+}
+.mistake-body {}
+.mistake-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mistake-wrong {
+  font-size: 13px;
+  color: var(--accent);
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+.mistake-right {
+  font-size: 13.5px;
+  color: var(--slate);
+  line-height: 1.7;
+}
+.mistake-right strong { color: var(--teal-dark); }
+
+/* 生活習慣 */
+.lifestyle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+.lifestyle-card {
+  background: var(--stone);
+  border-radius: var(--r);
+  padding: 18px;
+}
+.lifestyle-icon { font-size: 24px; margin-bottom: 8px; }
+.lifestyle-title { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+.lifestyle-text { font-size: 13px; color: var(--slate-mid); line-height: 1.7; }
+
+/* 分頁 Tab */
+.guide-tabs {
+  display: flex;
+  gap: 6px;
+  border-bottom: 2px solid #E8EEF2;
+  margin-bottom: 32px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.guide-tabs::-webkit-scrollbar { display: none; }
+.gtab {
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--slate-mid);
+  white-space: nowrap;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all .2s;
+  font-family: var(--sans);
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.gtab:hover { color: var(--teal); }
+.gtab.on { color: var(--teal); border-bottom-color: var(--teal); }
+.guide-panel { display: none; }
+.guide-panel.on { display: block; }
+
+
+/* ── DETAILS/SUMMARY 文獻摺疊 ── */
+details summary::-webkit-details-marker { display: none; }
+details summary::marker { display: none; }
+details[open] summary span:first-child::after { content: ' ▲'; font-size:10px; }
+details:not([open]) summary span:first-child::after { content: ' ▼'; font-size:10px; }
+details > div {
+  animation: fadeDown .25s ease;
+}
+@keyframes fadeDown {
+  from { opacity:0; transform: translateY(-6px); }
+  to   { opacity:1; transform: none; }
+}
+
+/* ── ACTION SECTION ── */
+#action { padding: 80px 0; background: white; }
+.action-inner {
+  background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal-dark) 60%, #2A9B7A 100%);
+  border-radius: 24px;
+  padding: 60px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.action-inner::before {
+  content: '';
+  position: absolute;
+  top: -80px; right: -80px;
+  width: 280px; height: 280px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 50%;
+}
+.action-inner::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; left: -40px;
+  width: 200px; height: 200px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 50%;
+}
+.action-label { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: rgba(255,255,255,0.5); text-transform: uppercase; margin-bottom: 16px; }
+.action-h2 { font-family: var(--serif); font-size: clamp(22px, 4vw, 32px); font-weight: 700; color: white; margin-bottom: 12px; line-height: 1.3; }
+.action-desc { font-size: 15px; color: rgba(255,255,255,0.7); line-height: 1.7; max-width: 480px; margin: 0 auto 36px; }
+.action-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  position: relative; z-index: 1;
+}
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  color: var(--teal-dark);
+  padding: 14px 28px;
+  border-radius: 99px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+.btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
+.btn-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #06C755;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 99px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-line:hover { background: #05b34c; transform: translateY(-2px); }
+.action-note { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 20px; position: relative; z-index: 1; }
+
+/* ── FOOTER ── */
+footer { background: var(--ink); color: rgba(255,255,255,0.5); padding: 40px 0 32px; }
+.footer-inner { display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; }
+.footer-brand { font-size: 13px; line-height: 1.8; }
+.footer-brand strong { color: white; display: block; margin-bottom: 4px; font-size: 14px; }
+.footer-links { display: flex; flex-direction: column; gap: 6px; font-size: 13px; }
+.footer-links a { color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover { color: white; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; font-size: 12px; line-height: 1.7; text-align: center; }
+
+/* ── LINE FLOAT ── */
+.line-float {
+  position: fixed;
+  bottom: 24px; right: 24px;
+  z-index: 99;
+  background: #06C755;
+  color: white;
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(6,199,85,0.4);
+  transition: all 0.2s;
+}
+.line-float:hover { transform: scale(1.1); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 400px) {
+  .hero-stat { padding: 0 16px 0 0; margin-right: 16px; }
+  .action-inner { padding: 40px 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-dot">
+        <svg viewBox="0 0 16 16"><path d="M8 1a5 5 0 1 0 0 10A5 5 0 0 0 8 1zM8 3a3 3 0 1 1 0 6A3 3 0 0 1 8 3z"/><circle cx="8" cy="6" r="1.5"/></svg>
+      </div>
+      <span class="nav-logo-text">NUTC 敏感肌<br>衛教平台</span>
+    </a>
+    <div class="nav-links">
+      <a href="#intro-guide">入門指南</a>
+      <a href="#habit-quiz">習慣檢測</a>
+      <a href="#barrier">屏障圖解</a>
+      <a href="#decision">症狀決策</a>
+      <a href="#concept">觀念釐清</a>
+      <a href="#quiz">問卷解析</a>
+      <a href="#themes">五大主題</a>
+      <a href="#rules">修護守則</a>
+      <a href="#about">關於專題</a>
+    </div>
+    <a href="https://forms.gle/o1PQ1mGXoRym5rF28" target="_blank" class="nav-cta">
+      📋 參與後測
+    </a>
+    <button class="nav-mobile-btn" onclick="toggleMobileNav()" id="mobile-btn" aria-label="選單">
+      <span id="mobile-btn-icon">☰</span> 選單
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile-overlay" id="mobile-overlay" onclick="closeMobileNav()"></div>
+<div class="nav-mobile-menu" id="mobile-menu">
+  <a href="#intro-guide" onclick="closeMobileNav()">📖 入門指南</a>
+  <a href="#habit-quiz" onclick="closeMobileNav()">🧪 習慣檢測</a>
+  <a href="#barrier" onclick="closeMobileNav()">🔬 屏障圖解</a>
+  <a href="#decision" onclick="closeMobileNav()">🩺 症狀決策</a>
+  <a href="#concept" onclick="closeMobileNav()">💡 觀念釐清</a>
+  <a href="#quiz" onclick="closeMobileNav()">📊 問卷解析</a>
+  <a href="#themes" onclick="closeMobileNav()">📚 五大主題</a>
+  <a href="#rules" onclick="closeMobileNav()">🛡️ 修護守則</a>
+  <a href="#about" onclick="closeMobileNav()">🎓 關於專題</a>
+  <a href="https://forms.gle/o1PQ1mGXoRym5rF28" target="_blank" class="menu-cta" onclick="closeMobileNav()">📋 填寫後測問卷</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-shape"></div>
+  <div class="container">
+    <p class="hero-eyebrow reveal"><span></span>國立臺中科技大學 美容系 專題研究</p>
+    <h1 class="hero-h1 reveal reveal-delay-1">
+      你的肌膚問題，<br><em>可能被誤解很久了</em>
+    </h1>
+    <p class="hero-subline reveal reveal-delay-1">敏感肌修護衛教教材之建構與知識提升效果研究</p>
+    <p class="hero-tagline reveal reveal-delay-2">
+      錯誤的保養觀念，會讓敏感肌越來越差。<br>
+      <strong>5 大主題、15 個知識點，帶你從根本搞懂敏感肌。</strong>
+    </p>
+    <div class="hero-btns reveal reveal-delay-3">
+      <a href="#concept" class="btn-primary">
+        <span>開始學習</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="https://forms.gle/o1PQ1mGXoRym5rF28" target="_blank" class="btn-ghost">
+        📋 填寫後測問卷
+      </a>
+    </div>
+    <div class="hero-stats reveal reveal-delay-4">
+      <div class="hero-stat">
+        <div class="hero-stat-num">5</div>
+        <div class="hero-stat-label">核心主題</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">15</div>
+        <div class="hero-stat-label">知識測驗題</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">4</div>
+        <div class="hero-stat-label">黃金修護守則</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-progress"></div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- HABIT QUIZ -->
+<section id="habit-quiz" style="padding: 72px 0; background: var(--stone);">
+  <div class="container">
+    <div style="max-width: 560px; margin: 0 auto;">
+      <div id="qz-intro" style="text-align:center; padding: 0 0 1.5rem;">
+        <p style="font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--teal); margin-bottom:.5rem;">肌膚生活習慣檢測</p>
+        <h2 style="font-family:var(--serif); font-size:clamp(20px,4vw,26px); font-weight:700; color:var(--ink); margin-bottom:.5rem; line-height:1.4;">你的日常生活，<br>正在偷偷消耗你的皮膚嗎？</h2>
+        <p style="font-size:13px; color:var(--slate-mid); line-height:1.7;">不問知識、只問你的真實生活習慣<br>5 個場景 · 60 秒 · 立刻看出問題在哪</p>
+      </div>
+      <div id="qz-prog" style="display:none; align-items:center; gap:10px; margin-bottom:1.25rem;">
+        <div id="qz-dots" style="display:flex; gap:5px; flex:1;"></div>
+        <span id="qz-lbl" style="font-size:12px; color:var(--slate-light); white-space:nowrap;"></span>
+      </div>
+      <div id="qz-area"></div>
+      <div id="qz-result" style="display:none;"></div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="section-divider"></div>
+
+<!-- INTRO GUIDE -->
+<section id="intro-guide">
+  <div class="container">
+    <p class="section-label reveal">入門指南</p>
+    <h2 class="section-h2 reveal reveal-delay-1">敏感肌，你真的了解嗎？</h2>
+    <p class="section-desc reveal reveal-delay-2">在開始學保養之前，先搞懂三件事：什麼是敏感狀態、怎麼保養最安全、哪些成分可以信任。</p>
+
+    <!-- 內容分頁 -->
+    <div class="guide-tabs reveal reveal-delay-2">
+      <button class="gtab on" onclick="switchGuide('what')">01 什麼是敏感肌</button>
+      <button class="gtab" onclick="switchGuide('routine')">02 日常保養流程</button>
+      <button class="gtab" onclick="switchGuide('traffic')">03 成分紅綠燈</button>
+      <button class="gtab" onclick="switchGuide('mistakes')">04 三大常見錯誤</button>
+      <button class="gtab" onclick="switchGuide('lifestyle')">05 生活習慣</button>
+    </div>
+
+    <!-- 01 什麼是敏感肌 -->
+    <div class="guide-panel on" id="guide-what">
+
+      <div class="intro-two-col reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:28px;">
+        <div style="background:var(--sky);border-radius:var(--r-lg);padding:22px;border-left:4px solid var(--teal);">
+          <p style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:8px;">敏感肌的正確定義</p>
+          <p style="font-size:14px;color:var(--teal-dark);line-height:1.8;font-weight:500;">敏感肌<strong>不是一種膚質</strong>，而是一種<strong>「比較容易不舒服」的狀態</strong>——容易泛紅、刺痛、乾癢，在換季、壓力大、用到不合產品時特別容易發作。</p>
+        </div>
+        <div style="background:var(--accent-light);border-radius:var(--r-lg);padding:22px;border-left:4px solid var(--accent);">
+          <p style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;">⚠️ 這些症狀要看醫生</p>
+          <p style="font-size:13.5px;color:#7A3028;line-height:1.8;">若有<strong>長期反覆紅腫、膿疱、明顯血管絲或皮膚增厚</strong>，可能是酒糟、異位性皮膚炎等皮膚病，不是靠保養能解決的，需由皮膚科醫師診斷。</p>
+        </div>
+      </div>
+ 
+      <details style="margin-top:16px;" class="reveal">
+        <summary style="font-size:12px;font-weight:700;color:var(--teal);cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;padding:8px 0;border-top:1px solid #E8EEF2;">
+          <span>📖</span> 顯示本區塊文獻依據
+        </summary>
+        <div style="background:var(--stone);border-radius:var(--r);padding:14px 16px;margin-top:8px;display:flex;flex-direction:column;gap:10px;">
+          <div style="font-size:12px;color:var(--slate);line-height:1.7;">
+            <p style="font-weight:700;color:var(--ink);margin-bottom:3px;">① 敏感肌定義與盛行率</p>
+            <p>Misery L, et al. "Definition of Sensitive Skin: An Expert Position Paper from the Special Interest Group on Sensitive Skin of the IFSI." <em>J Eur Acad Dermatol Venereol</em> (2020) 34(2):222–229. PMID: 31660659</p>
+            <p style="color:var(--slate-mid);margin-top:3px;">以 Delphi 共識法確立敏感肌定義：「對正常情況下不會引起不適的刺激產生過度感覺反應的症候群」，以主觀不適感（刺痛、灼熱、搔癢）為核心特徵。</p>
+          </div>
+          <div style="font-size:12px;color:var(--slate);line-height:1.7;">
+            <p style="font-weight:700;color:var(--ink);margin-bottom:3px;">② 敏感肌盛行率</p>
+            <p>Farage MA. "The Prevalence of Sensitive Skin." <em>Front Med (Lausanne)</em> (2019) 6:98. PMID: 31157225</p>
+            <p style="color:var(--slate-mid);margin-top:3px;">全球調查顯示約 60–70% 女性、50–60% 男性自述有某種程度的敏感肌，與屏障功能受損及神經感覺亢進相關。</p>
+          </div>
+          <div style="font-size:12px;color:var(--slate);line-height:1.7;">
+            <p style="font-weight:700;color:var(--ink);margin-bottom:3px;">③ 敏感肌 vs 酒糟鑑別診斷</p>
+            <p>Wang XY, et al. "A predictive model for differential diagnosis between rosacea and sensitive skin." <em>Chinese Medical Journal</em> (2020) 133:2132–2134. PMID: 32675483</p>
+            <p style="color:var(--slate-mid);margin-top:3px;">研究顯示酒糟與敏感肌在臨床表現上有重疊，但酒糟患者的紅斑持續性更強、與不當保養習慣的相關性較低（41.3% vs 83.8%），兩者病理機制與治療方向不同，需由皮膚科醫師鑑別。</p>
+          </div>
+        </div>
+      </details>
+      <h3 style="font-family:var(--serif);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:6px;" class="reveal">🔍 三題自我檢測</h3>
+      <p style="font-size:13px;color:var(--slate-mid);margin-bottom:16px;" class="reveal">點擊符合你的描述，看看你目前的狀態</p>
+
+      <div class="selfcheck-grid reveal">
+        <div class="selfcheck-card" onclick="toggleCheck(this,1)">
+          <div class="selfcheck-num">1</div>
+          <div class="selfcheck-text">很容易因為天氣變化、熬夜、情緒就臉紅或發癢？</div>
+        </div>
+        <div class="selfcheck-card" onclick="toggleCheck(this,2)">
+          <div class="selfcheck-num">2</div>
+          <div class="selfcheck-text">常常換新產品就刺痛、紅一塊，甚至起小疹子？</div>
+        </div>
+        <div class="selfcheck-card" onclick="toggleCheck(this,3)">
+          <div class="selfcheck-num">3</div>
+          <div class="selfcheck-text">保養步驟越擦越多，皮膚反而越來越不穩定？</div>
+        </div>
+      </div>
+      <div id="selfcheck-result" class="selfcheck-result tip reveal" style="display:none;"></div>
+
+    </div>
+
+    <!-- 02 日常保養流程 -->
+    <div class="guide-panel" id="guide-routine">
+      <div class="routine-tabs reveal">
+        <button class="rtab on" onclick="switchRoutine('night')">🌙 晚上（有卸妝）</button>
+        <button class="rtab" onclick="switchRoutine('morning')">☀️ 早上</button>
+        <button class="rtab" onclick="switchRoutine('sos')">🚨 大爆敏急救版</button>
+      </div>
+
+      <div class="routine-panel on" id="routine-night">
+        <div class="routine-steps">
+          <div class="rstep">
+            <div class="rstep-num">1</div>
+            <div class="rstep-icon">🧴</div>
+            <div class="rstep-body">
+              <div class="rstep-title">溫和卸妝</div>
+              <div class="rstep-sub">不摩擦、不長時間按摩。選乳化型卸妝乳或膠，輕輕帶走彩妝即可。</div>
+            </div>
+          </div>
+          <div class="rstep">
+            <div class="rstep-num">2</div>
+            <div class="rstep-icon">💧</div>
+            <div class="rstep-body">
+              <div class="rstep-title">溫和洗臉</div>
+              <div class="rstep-sub">胺基酸或弱酸性洗面乳 + 溫涼水，雙手輕柔按摩 30 秒內沖淨。</div>
+            </div>
+          </div>
+          <div class="rstep">
+            <div class="rstep-num">3</div>
+            <div class="rstep-icon">✨</div>
+            <div class="rstep-body">
+              <div class="rstep-title">補水</div>
+              <div class="rstep-sub">單純保濕化妝水或精華（玻尿酸、甘油）輕拍至八分乾。</div>
+            </div>
+          </div>
+          <div class="rstep">
+            <div class="rstep-num">4</div>
+            <div class="rstep-icon">🛡️</div>
+            <div class="rstep-body">
+              <div class="rstep-title">修護＋鎖水</div>
+              <div class="rstep-sub">含神經醯胺、尿囊素、舒緩成分的修護乳霜，作為最後一層封鎖水分。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="routine-panel" id="routine-morning">
+        <div class="routine-steps">
+          <div class="rstep">
+            <div class="rstep-num">1</div>
+            <div class="rstep-icon">🚿</div>
+            <div class="rstep-body">
+              <div class="rstep-title">清潔（視情況）</div>
+              <div class="rstep-sub">不出油 → 清水洗臉就夠。出油明顯 → 溫和胺基酸洗面乳。不必每天早上都用洗面乳。</div>
+            </div>
+          </div>
+          <div class="rstep">
+            <div class="rstep-num">2</div>
+            <div class="rstep-icon">💧</div>
+            <div class="rstep-body">
+              <div class="rstep-title">輕薄保濕</div>
+              <div class="rstep-sub">保濕化妝水或輕薄乳液，維持水潤不厚重。</div>
+            </div>
+          </div>
+          <div class="rstep">
+            <div class="rstep-num">3</div>
+            <div class="rstep-icon">☀️</div>
+            <div class="rstep-body">
+              <div class="rstep-title">防曬（每天必做）</div>
+              <div class="rstep-sub">選溫和、不刺痛的防曬或純物理性（氧化鋅）。不想擦乳液型 → 寬沿帽＋抗UV傘同樣有效。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="routine-panel" id="routine-sos">
+        <div class="sos-box">
+          <div class="sos-label">🚨 大爆敏急救模式</div>
+          <p style="font-size:13px;color:#7A3028;margin-bottom:12px;line-height:1.7;">皮膚突然爆紅、刺痛、起疹子，先把所有保養砍到最少。只做這三步：</p>
+          <div class="sos-steps">
+            <div class="sos-step">① 溫和清潔</div>
+            <div class="sos-arrow">→</div>
+            <div class="sos-step">② 單純保濕補水</div>
+            <div class="sos-arrow">→</div>
+            <div class="sos-step">③ 修護乳霜鎖水</div>
+          </div>
+        </div>
+        <div style="background:var(--stone);border-radius:var(--r);padding:14px 16px;margin-top:12px;">
+          <p style="font-size:12px;font-weight:700;color:var(--slate-mid);margin-bottom:6px;">⛔ 急救期間停用以下所有產品</p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;">
+            <span style="font-size:12px;background:var(--accent-light);color:var(--accent);padding:4px 10px;border-radius:99px;">酸類</span>
+            <span style="font-size:12px;background:var(--accent-light);color:var(--accent);padding:4px 10px;border-radius:99px;">美白精華</span>
+            <span style="font-size:12px;background:var(--accent-light);color:var(--accent);padding:4px 10px;border-radius:99px;">去角質</span>
+            <span style="font-size:12px;background:var(--accent-light);color:var(--accent);padding:4px 10px;border-radius:99px;">含精油香味</span>
+            <span style="font-size:12px;background:var(--accent-light);color:var(--accent);padding:4px 10px;border-radius:99px;">片狀面膜</span>
+            <span style="font-size:12px;background:var(--accent-light);color:var(--accent);padding:4px 10px;border-radius:99px;">多步驟精華</span>
+          </div>
+        </div>
+        <p style="font-size:12px;color:var(--slate-mid);margin-top:10px;padding:10px 14px;background:var(--sky);border-radius:var(--r);">若急救 3 天後仍未改善，或出現大片紅腫、水泡，請盡快就醫，不要繼續自行處理。</p>
+      </div>
+    </div>
+
+    <!-- 03 成分紅綠燈 -->
+    <div class="guide-panel" id="guide-traffic">
+      <p style="font-size:14px;color:var(--slate);line-height:1.7;margin-bottom:8px;" class="reveal">不需要背學名，只要看懂「紅綠燈」就夠了。</p>
+      <p style="font-size:13px;color:var(--slate-mid);margin-bottom:0;" class="reveal">💡 口訣：<strong>香味越重、洗完越澀的東西，對敏感肌通常越不友善。</strong></p>
+      <div class="traffic-grid">
+
+        <div class="traffic-card green reveal">
+          <div class="traffic-head">
+            <div class="traffic-dot green"></div>
+            <div>
+              <div class="traffic-head-title">🟢 綠燈：可以優先找</div>
+              <div class="traffic-head-sub">修護屏障、補水保濕、舒緩抗紅</div>
+            </div>
+          </div>
+          <div class="traffic-body">
+            <p style="font-size:11px;font-weight:700;color:#2D7A56;margin:10px 0 6px;text-transform:uppercase;letter-spacing:.05em;">修護屏障</p>
+            <span class="ingredient-tag">神經醯胺 Ceramide</span>
+            <span class="ingredient-tag">膽固醇 Cholesterol</span>
+            <span class="ingredient-tag">角鯊烷 Squalane</span>
+            <p style="font-size:11px;font-weight:700;color:#2D7A56;margin:10px 0 6px;text-transform:uppercase;letter-spacing:.05em;">補水保濕</p>
+            <span class="ingredient-tag">玻尿酸 Hyaluronic Acid</span>
+            <span class="ingredient-tag">甘油 Glycerin</span>
+            <span class="ingredient-tag">尿囊素 Allantoin</span>
+            <span class="ingredient-tag">泛醇 Panthenol</span>
+            <p style="font-size:11px;font-weight:700;color:#2D7A56;margin:10px 0 6px;text-transform:uppercase;letter-spacing:.05em;">舒緩抗紅</p>
+            <span class="ingredient-tag">甘草酸衍生物</span>
+            <span class="ingredient-tag">燕麥萃取</span>
+            <span class="ingredient-tag">積雪草萃取</span>
+            <div class="traffic-memo">看到 ceramide、squalane、glycerin 這幾個字，對敏感肌通常是「加分的好朋友」。</div>
+          </div>
+        </div>
+
+        <div class="traffic-card yellow reveal reveal-delay-1">
+          <div class="traffic-head">
+            <div class="traffic-dot yellow"></div>
+            <div>
+              <div class="traffic-head-title">🟡 黃燈：不是不能用</div>
+              <div class="traffic-head-sub">皮膚穩定後，在專業人員建議下慢慢加</div>
+            </div>
+          </div>
+          <div class="traffic-body">
+            <p style="font-size:11px;font-weight:700;color:#854F0B;margin:10px 0 6px;text-transform:uppercase;letter-spacing:.05em;">酸類去角質</p>
+            <span class="ingredient-tag">果酸 AHA</span>
+            <span class="ingredient-tag">杏仁酸 Mandelic Acid</span>
+            <span class="ingredient-tag">水楊酸 BHA</span>
+            <p style="font-size:11px;font-weight:700;color:#854F0B;margin:10px 0 6px;text-transform:uppercase;letter-spacing:.05em;">高濃度活性成分</p>
+            <span class="ingredient-tag">高濃度維他命 C</span>
+            <span class="ingredient-tag">A 醇 Retinol</span>
+            <span class="ingredient-tag">多功能美白精華</span>
+            <div class="traffic-memo">敏感期先不要自己亂用。等皮膚穩定，再在醫師或專業人員評估下慢慢加入。</div>
+          </div>
+        </div>
+
+        <div class="traffic-card red reveal reveal-delay-2">
+          <div class="traffic-head">
+            <div class="traffic-dot red"></div>
+            <div>
+              <div class="traffic-head-title">🔴 紅燈：敏感期先避開</div>
+              <div class="traffic-head-sub">常見刺激物，敏感肌高風險</div>
+            </div>
+          </div>
+          <div class="traffic-body">
+            <p style="font-size:11px;font-weight:700;color:#8A2010;margin:10px 0 6px;text-transform:uppercase;letter-spacing:.05em;">刺激與致敏原</p>
+            <span class="ingredient-tag">高比例酒精 Alcohol</span>
+            <span class="ingredient-tag">香精 Fragrance / Parfum</span>
+            <span class="ingredient-tag">大量精油</span>
+            <span class="ingredient-tag">SLS 強清潔劑</span>
+            <p style="font-size:11px;font-weight:700;color:#8A2010;margin:10px 0 6px;text-transform:uppercase;letter-spacing:.05em;">其他風險</p>
+            <span class="ingredient-tag">成分表不清楚的產品</span>
+            <span class="ingredient-tag">來路不明偏方藥膏</span>
+            <div class="traffic-memo">成分表越短、越看得懂，對敏感肌通常越安全。</div>
+          </div>
+        </div>
+
+      </div>
+      <details style="margin-top:20px;" class="reveal">
+        <summary style="font-size:12px;font-weight:700;color:var(--teal);cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;padding:8px 0;border-top:1px solid #E8EEF2;">
+          <span>📖</span> 顯示成分紅綠燈文獻依據
+        </summary>
+        <div style="background:var(--stone);border-radius:var(--r);padding:14px 16px;margin-top:8px;display:flex;flex-direction:column;gap:10px;">
+          <div style="font-size:12px;color:var(--slate);line-height:1.7;">
+            <p style="font-weight:700;color:var(--ink);margin-bottom:3px;">① 神經醯胺修護屏障（綠燈）</p>
+            <p>Draelos ZD, et al. "Ceramide-containing adjunctive skin care for skin barrier restoration during acne vulgaris treatment." <em>J Drugs Dermatol</em> (2023) 22(6):554–558. PMID: 37276158</p>
+            <p style="color:var(--slate-mid);margin-top:3px;">含神經醯胺的保濕劑可顯著降低乾燥、紅斑及脫屑的嚴重度，加速屏障受損後的功能恢復，具有充分的臨床實證。</p>
+          </div>
+          <div style="font-size:12px;color:var(--slate);line-height:1.7;">
+            <p style="font-weight:700;color:var(--ink);margin-bottom:3px;">② 植物萃取與香精（紅燈）</p>
+            <p>Kiken DA, Cohen DE. "Contact dermatitis to botanical extracts." <em>Am J Contact Dermat</em> (2002) 13(3):148–152. PMID: 12165936</p>
+            <p style="color:var(--slate-mid);margin-top:3px;">特定植物萃取物（菊科植物、茶樹精油、薰衣草）是臨床常見的接觸性皮膚炎過敏原；皮膚科醫師應將其視為潛在致敏物質，尤其在屏障已受損時風險更高。</p>
+          </div>
+          <div style="font-size:12px;color:var(--slate);line-height:1.7;">
+            <p style="font-weight:700;color:var(--ink);margin-bottom:3px;">③ 清潔劑界面活性劑（紅燈）</p>
+            <p>Mukhopadhyay P. "Cleansers and their role in various dermatological disorders." <em>Indian J Dermatol</em> (2011) 56(1):2–6. PMID: 21572782</p>
+            <p style="color:var(--slate-mid);margin-top:3px;">強力陰離子界面活性劑（如 SLS）可破壞角質層蛋白、溶解天然保濕因子，使屏障受損加劇。對敏感肌建議使用弱酸性合成清潔劑（syndet）。</p>
+          </div>
+        </div>
+      </details>
+    </div>
+
+    <!-- 04 三大常見錯誤 -->
+    <div class="guide-panel" id="guide-mistakes">
+      <p style="font-size:14px;color:var(--slate);line-height:1.7;margin-bottom:20px;" class="reveal">很多敏感問題不是產品本身的問題，而是「用法」和「觀念」出了差錯。</p>
+      <div class="mistakes-list">
+        <div class="mistake-card reveal">
+          <div class="mistake-icon-wrap">📦</div>
+          <div class="mistake-body">
+            <div class="mistake-title">
+              <span style="font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-light);padding:2px 8px;border-radius:99px;">錯誤 1</span>
+              覺得保養品擦越多越好
+            </div>
+            <div class="mistake-wrong">✗ 「我每天用十幾個步驟，還是越來越差？一定是產品不夠好！」</div>
+            <div class="mistake-right">✓ 步驟多 ≠ 效果好。皮膚穩定最重要，一天 <strong>3–4 步驟</strong>就夠了。成分疊加越多，皮膚承受的刺激也越多，敏感期更要精簡。</div>
+          </div>
+        </div>
+        <div class="mistake-card reveal reveal-delay-1">
+          <div class="mistake-icon-wrap">🔄</div>
+          <div class="mistake-body">
+            <div class="mistake-title">
+              <span style="font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-light);padding:2px 8px;border-radius:99px;">錯誤 2</span>
+              皮膚刺就一直換產品
+            </div>
+            <div class="mistake-wrong">✗ 「這個不行，換那個！再換一個！」——結果皮膚更亂。</div>
+            <div class="mistake-right">✓ 換產品要<strong>一次只換一樣</strong>，並先做局部測試（耳後或下頰小範圍），連續 <strong>2–3 天沒事</strong>再上全臉。找到問題源頭比一直換更重要。</div>
+          </div>
+        </div>
+        <div class="mistake-card reveal reveal-delay-2">
+          <div class="mistake-icon-wrap">🚿</div>
+          <div class="mistake-body">
+            <div class="mistake-title">
+              <span style="font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-light);padding:2px 8px;border-radius:99px;">錯誤 3</span>
+              清潔太頻繁、太用力
+            </div>
+            <div class="mistake-wrong">✗ 一天洗臉 3 次、用熱水、搭配磨砂膏去角質——感覺「洗乾淨了」其實是屏障在哭泣。</div>
+            <div class="mistake-right">✓ 原則：<strong>一天 1–2 次、溫涼水、雙手輕柔 30 秒</strong>。早晨不出油的話，只用清水洗臉就夠了，完全不需要洗面乳。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 生活習慣 -->
+    <div class="guide-panel" id="guide-lifestyle">
+      <p style="font-size:14px;color:var(--slate);line-height:1.7;margin-bottom:0;" class="reveal">保養品只是一部分，生活習慣才是影響皮膚最底層的原因。</p>
+      <div class="lifestyle-grid">
+        <div class="lifestyle-card reveal">
+          <div class="lifestyle-icon">😴</div>
+          <div class="lifestyle-title">睡眠與壓力</div>
+          <div class="lifestyle-text">熬夜、長期壓力大，會讓皮質醇上升，皮膚屏障修復速度下降，敏感更容易被引爆。盡量<strong>12 點前入睡</strong>，這是最有效也最免費的「保養品」。</div>
+        </div>
+        <div class="lifestyle-card reveal reveal-delay-1">
+          <div class="lifestyle-icon">🥗</div>
+          <div class="lifestyle-title">飲食與水分</div>
+          <div class="lifestyle-text">多原型食物、足夠飲水，減少高糖、高油炸飲食，有助於降低整體發炎負荷。飲食不是特效藥，但長期累積影響明顯。</div>
+        </div>
+        <div class="lifestyle-card reveal reveal-delay-2">
+          <div class="lifestyle-icon">🛏️</div>
+          <div class="lifestyle-title">枕頭與毛巾</div>
+          <div class="lifestyle-text">枕頭套建議<strong>每週換洗</strong>，毛巾<strong>不共用、每隔幾天更換</strong>，避免塵蟎和細菌長期接觸臉部皮膚加重刺激。</div>
+        </div>
+        <div class="lifestyle-card reveal reveal-delay-3">
+          <div class="lifestyle-icon">😷</div>
+          <div class="lifestyle-title">口罩刺激</div>
+          <div class="lifestyle-text">長時間戴口罩會造成悶熱、摩擦、濕氣積聚，是敏感肌的常見誘因。選透氣材質、每 4 小時更換，口罩內緣可薄擦修護乳霜作為隔離。</div>
+        </div>
+        <div class="lifestyle-card reveal">
+          <div class="lifestyle-icon">🌡️</div>
+          <div class="lifestyle-title">環境溫差</div>
+          <div class="lifestyle-text">冷氣房、暖氣房、換季溫差大——這些都是誘發敏感的常見環境因素。加強室內保濕（加濕器）、外出換季多補充保濕，有助減少發作頻率。</div>
+        </div>
+        <div class="lifestyle-card reveal reveal-delay-1">
+          <div class="lifestyle-icon">☕</div>
+          <div class="lifestyle-title">刺激性飲食</div>
+          <div class="lifestyle-text">辛辣、酒精、咖啡因可能讓微血管擴張，加重泛紅感。不需要完全戒除，但在皮膚不穩定時暫時減少，可幫助皮膚更快恢復穩定。</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- BARRIER DIAGRAM -->
+<section id="barrier">
+  <div class="container">
+    <p class="section-label reveal">AI 互動圖解</p>
+    <h2 class="section-h2 reveal reveal-delay-1">皮膚屏障是怎麼運作的？</h2>
+    <p class="section-desc reveal reveal-delay-2">點擊切換三種狀態，看看正常、受損、修護中的皮膚截面有什麼不同。</p>
+    <div style="margin-top:32px;" class="reveal reveal-delay-2">
+      <div class="barrier-tabs">
+        <button class="barrier-tab on" onclick="setBarrier('healthy')">正常屏障</button>
+        <button class="barrier-tab" onclick="setBarrier('damaged')">受損屏障</button>
+        <button class="barrier-tab" onclick="setBarrier('repair')">修護中</button>
+      </div>
+      <div class="barrier-svg-wrap">
+        <svg id="bsvg" width="100%" viewBox="0 0 680 430" role="img">
+          <title>皮膚屏障截面互動圖</title>
+          <desc>正常、受損、修護中三種皮膚屏障狀態的截面示意圖</desc>
+          <defs><marker id="barr-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M2 2L8 5L2 8" fill="none" stroke="#E05C44" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
+          <!-- 底色層 -->
+          <rect x="0" y="330" width="680" height="90" fill="#F5EDE8"/>
+          <rect x="0" y="280" width="680" height="50" fill="#EFE0D8"/>
+          <rect x="0" y="210" width="680" height="70" fill="#F7EEE8"/>
+          <rect x="0" y="160" width="680" height="50" fill="#FDF5F0"/>
+          <rect x="0" y="90"  width="680" height="70" fill="#FEF9F6"/>
+          <rect id="bsebum" x="0" y="72" width="680" height="18" fill="#FDEBD0" opacity="1"/>
+          <!-- 分隔線 -->
+          <line x1="0" y1="90"  x2="484" y2="90"  stroke="#E8D5C8" stroke-width="0.5" stroke-dasharray="4 3"/>
+          <line x1="0" y1="160" x2="484" y2="160" stroke="#E8D5C8" stroke-width="0.5" stroke-dasharray="4 3"/>
+          <line x1="0" y1="210" x2="484" y2="210" stroke="#E8D5C8" stroke-width="0.5" stroke-dasharray="4 3"/>
+          <line x1="0" y1="280" x2="484" y2="280" stroke="#E8D5C8" stroke-width="0.5" stroke-dasharray="4 3"/>
+          <line x1="0" y1="330" x2="484" y2="330" stroke="#E8D5C8" stroke-width="0.5" stroke-dasharray="4 3"/>
+          <!-- 右側標籤 -->
+          <line x1="488" y1="81"  x2="484" y2="81"  stroke="#D4B898" stroke-width="0.5"/>
+          <text x="492" y="77"  font-size="12" fill="#C4933A" font-weight="500" font-family="inherit">皮脂膜</text>
+          <text x="492" y="89"  font-size="10" fill="#A8B8C2" font-family="inherit">天然保護薄膜</text>
+          <line x1="488" y1="123" x2="484" y2="123" stroke="#D4B898" stroke-width="0.5"/>
+          <text x="492" y="119" font-size="12" fill="#6B4C3A" font-weight="500" font-family="inherit">角質層</text>
+          <text x="492" y="131" font-size="10" fill="#A8B8C2" font-family="inherit">最外層防護</text>
+          <line x1="488" y1="188" x2="484" y2="188" stroke="#D4B898" stroke-width="0.5"/>
+          <text x="492" y="184" font-size="12" fill="#7A5040" font-weight="500" font-family="inherit">顆粒層</text>
+          <line x1="488" y1="248" x2="484" y2="248" stroke="#D4B898" stroke-width="0.5"/>
+          <text x="492" y="244" font-size="12" fill="#8A5850" font-weight="500" font-family="inherit">棘狀層</text>
+          <line x1="488" y1="308" x2="484" y2="308" stroke="#D4B898" stroke-width="0.5"/>
+          <text x="492" y="304" font-size="12" fill="#7A5040" font-weight="500" font-family="inherit">基底層</text>
+          <text x="492" y="316" font-size="10" fill="#A8B8C2" font-family="inherit">新細胞產生處</text>
+          <line x1="488" y1="368" x2="484" y2="368" stroke="#D4B898" stroke-width="0.5"/>
+          <text x="492" y="364" font-size="12" fill="#6B4C3A" font-weight="500" font-family="inherit">真皮層</text>
+          <text x="492" y="376" font-size="10" fill="#A8B8C2" font-family="inherit">膠原蛋白・神經</text>
+          <!-- 頂部環境標籤 -->
+          <line x1="0" y1="70" x2="484" y2="70" stroke="#E8D5C8" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.5"/>
+          <text x="8" y="50" font-size="12" fill="#6B7F8C" font-weight="500" font-family="inherit">外部環境</text>
+          <text x="8" y="63" font-size="10" fill="#A8B8C2" font-family="inherit">灰塵・刺激物・細菌・UV</text>
+          <text id="bsvg-mode-hint" x="340" y="56" text-anchor="middle" font-size="10" fill="#A8B8C2" font-family="inherit">← 切換狀態查看變化</text>
+          <!-- 動態圖層 -->
+          <g id="bcells"></g>
+          <g id="blipids"></g>
+          <g id="bwater"></g>
+          <g id="birrits"></g>
+          <g id="bcers" opacity="0"></g>
+          <g id="barrows"></g>
+        </svg>
+      </div>
+      <div class="barrier-info" id="binfo">
+        <span class="barrier-info-tag ok" id="binfo-tag">正常狀態</span>
+        <div class="barrier-info-title" id="binfo-title">完整的皮膚屏障：磚牆結構</div>
+        <div class="barrier-info-body" id="binfo-body">角質細胞（磚塊）緊密排列，神經醯胺等脂質（灰縫）填滿細胞間隙。外來刺激物無法滲透，水分也不易散失，皮膚保持濕潤穩定。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CONCEPT -->
+<section id="concept">
+  <div class="container">
+    <p class="section-label reveal">Basic Concept</p>
+    <h2 class="section-h2 reveal reveal-delay-1">你是「敏感」還是「過敏」？</h2>
+    <p class="section-desc reveal reveal-delay-2">很多人把兩者搞混，但機制完全不同——搞清楚才能對症下藥，不再越弄越糟。</p>
+
+    <div class="concept-grid reveal reveal-delay-2">
+      <div class="concept-card sensitive">
+        <div class="concept-card-accent"></div>
+        <div class="concept-icon">🛡️</div>
+        <h3>敏感肌</h3>
+        <span class="tag">Sensitive Skin — 一種「狀態」</span>
+        <div class="concept-row">
+          <div class="concept-row-icon">🔬</div>
+          <div>
+            <div class="concept-row-label">核心機制</div>
+            <div class="concept-row-text">角質層變薄、水分流失，感覺神經對外界刺激過度反應</div>
+          </div>
+        </div>
+        <div class="concept-row">
+          <div class="concept-row-icon">💨</div>
+          <div>
+            <div class="concept-row-label">誘發因素</div>
+            <div class="concept-row-text">氣溫驟變、摩擦、熬夜壓力、一般化妝品</div>
+          </div>
+        </div>
+        <div class="concept-row">
+          <div class="concept-row-icon">💬</div>
+          <div>
+            <div class="concept-row-label">主要症狀</div>
+            <div class="concept-row-text">偏主觀感受：刺痛、灼熱、緊繃、乾癢，輕微泛紅</div>
+          </div>
+        </div>
+        <div class="concept-row">
+          <div class="concept-row-icon">✅</div>
+          <div>
+            <div class="concept-row-label">應對方式</div>
+            <div class="concept-row-text">溫和日常保養，補充神經醯胺修護屏障，長期抗戰</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="concept-card allergy">
+        <div class="concept-card-accent"></div>
+        <div class="concept-icon">⚠️</div>
+        <h3>皮膚過敏</h3>
+        <span class="tag">Skin Allergy — 一種「疾病」</span>
+        <div class="concept-row">
+          <div class="concept-row-icon">🔬</div>
+          <div>
+            <div class="concept-row-label">核心機制</div>
+            <div class="concept-row-text">免疫T細胞對特定化學分子產生致敏，接觸性皮膚炎</div>
+          </div>
+        </div>
+        <div class="concept-row">
+          <div class="concept-row-icon">🔎</div>
+          <div>
+            <div class="concept-row-label">誘發因素</div>
+            <div class="concept-row-text">接觸「特定過敏原」：香精、防腐劑（MI/MCI）、金屬鎳</div>
+          </div>
+        </div>
+        <div class="concept-row">
+          <div class="concept-row-icon">🚨</div>
+          <div>
+            <div class="concept-row-label">主要症狀</div>
+            <div class="concept-row-text">明顯客觀病灶：嚴重紅腫、起水泡、劇烈搔癢、脫屑</div>
+          </div>
+        </div>
+        <div class="concept-row">
+          <div class="concept-row-icon">🏥</div>
+          <div>
+            <div class="concept-row-label">應對方式</div>
+            <div class="concept-row-text">立即停用可疑產品！通常需皮膚科醫師開立抗組織胺或類固醇藥膏</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- QUIZ/CHART -->
+<section id="quiz">
+  <div class="container">
+    <div class="quiz-header">
+      <p class="section-label reveal">Pre-test Analysis</p>
+      <h2 class="section-h2 reveal reveal-delay-1">前測問卷解析：最多人答錯的地方</h2>
+      <p class="section-desc reveal reveal-delay-2">15 題知識測驗中，以下 4 大觀念錯誤率最高——看看你是否也踩過這些地雷。</p>
+    </div>
+
+    <div class="chart-wrap reveal">
+      <div class="chart-title">各主題觀念錯誤率分布</div>
+      <div class="chart-subtitle">根據前測問卷答題結果分析（題號分組）</div>
+      <div class="bar-row">
+        <div class="bar-row-label">強保養迷思</div>
+        <div class="bar-track"><div class="bar-fill accent" data-width="71" style="">誤以為固定強保養可預防敏感</div></div>
+        <div class="bar-note">71%</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-row-label">外觀判斷</div>
+        <div class="bar-track"><div class="bar-fill teal" data-width="51" style="">誤以為外觀正常代表屏障健康</div></div>
+        <div class="bar-note">51%</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-row-label">去角質迷思</div>
+        <div class="bar-track"><div class="bar-fill gold" data-width="50" style="">誤以為敏感肌應定期去角質</div></div>
+        <div class="bar-note">50%</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-row-label">成分選擇</div>
+        <div class="bar-track"><div class="bar-fill mid" data-width="44" style="">誤以為玻尿酸可取代神經醯胺</div></div>
+        <div class="bar-note">44%</div>
+      </div>
+    </div>
+
+    <div class="myths-grid">
+      <div class="myth-pill reveal">
+        <div class="myth-num red">1</div>
+        <div class="myth-content">
+          <div class="myth-title">角質清潔與代謝</div>
+          <div class="myth-wrong">✗ 長粉刺、術後長膿包要多洗幾次</div>
+          <div class="myth-right">✓ 粗糙脫屑是屏障求救訊號，此時去角質等於拆牆</div>
+        </div>
+      </div>
+      <div class="myth-pill reveal reveal-delay-1">
+        <div class="myth-num teal" style="background: var(--teal);">2</div>
+        <div class="myth-content">
+          <div class="myth-title">急救保養與疊擦</div>
+          <div class="myth-wrong">✗ 泛紅時趕快天天敷急救面膜補水</div>
+          <div class="myth-right">✓ 保養品沒有排毒反應，長疹就是過敏；受損時 Less is More</div>
+        </div>
+      </div>
+      <div class="myth-pill reveal reveal-delay-2">
+        <div class="myth-num gold">3</div>
+        <div class="myth-content">
+          <div class="myth-title">隱形傷害與作息</div>
+          <div class="myth-wrong">✗ 沒脫皮發紅就不算敏感，室內不用防曬</div>
+          <div class="myth-right">✓ UVA 穿透玻璃與雲層；熬夜壓力誘發無形發炎</div>
+        </div>
+      </div>
+      <div class="myth-pill reveal reveal-delay-3">
+        <div class="myth-num mid">4</div>
+        <div class="myth-content">
+          <div class="myth-title">斷食與成分選擇</div>
+          <div class="myth-wrong">✗ 過敏時什麼都不擦最好</div>
+          <div class="myth-right">✓ 屏障受損什麼都不擦會更乾；需要脂質而非只補水</div>
+        </div>
+      
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- FIVE THEMES -->
+<section id="themes">
+  <div class="container">
+    <div class="themes-intro">
+      <p class="section-label reveal">5 Core Themes</p>
+      <h2 class="section-h2 reveal reveal-delay-1">五大主題深度解析</h2>
+      <p class="section-desc reveal reveal-delay-2">點擊任一主題展開詳細說明——從常見迷思到醫學真相，一次弄懂。</p>
+    </div>
+
+    <div class="accordion reveal">
+
+      <!-- 主題一 -->
+      <div class="acc-item theme-1">
+        <div class="acc-header" data-index="0">
+          <div class="acc-icon-wrap">🚿</div>
+          <div class="acc-title-group">
+            <div class="acc-title">主題一：日常清潔（洗臉與沐浴）</div>
+            <div class="acc-meta">洗臉溫度、洗劑選擇、清潔頻率</div>
+          </div>
+          <div class="acc-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4.5l5 5 5-5" stroke="#6B7F8C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="vs-grid">
+              <div class="vs-wrong">
+                <div class="vs-label">✕ 常見錯誤觀念</div>
+                <div class="vs-text">「臉出油、長小疹子就是臉沒洗乾淨！要用洗淨力強的洗面乳多洗幾次，或用溫熱水打開毛孔洗乾淨。」</div>
+              </div>
+              <div class="vs-right">
+                <div class="vs-label">✓ 醫學真相導正</div>
+                <div class="vs-text">過度清潔會洗去天然皮脂膜與細胞間脂質，屏障受損後水分快速流失。水溫過高更刺激微血管加重泛紅。建議用<strong>溫涼水</strong>與<strong>溫和弱酸性洗劑</strong>，早晨若不出油可只用清水洗臉。</div>
+              </div>
+            </div>
+            <div class="ref-box">
+              <div class="ref-icon">📖</div>
+              <div class="ref-text"><strong>文獻依據：</strong>Mukhopadhyay P. "Cleansers and their role in various dermatological disorders." Indian Journal of Dermatology (2011). 含強烈表面活性劑的清潔產品會破壞角質層蛋白並溶解天然保濕因子。</div>
+            </div>
+            <div class="acc-rule-hint">→ 對應黃金守則：CLEAN 清潔</div>
+            <p style="font-size:12px;color:var(--teal-dark);background:var(--sky);border-radius:var(--r);padding:10px 14px;margin-top:10px;line-height:1.7;">💬 <strong>行為意向：</strong>下次洗臉時，我會把水溫調低，用指腹輕柔按摩，不再用毛巾用力擦乾。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 主題二 -->
+      <div class="acc-item theme-2">
+        <div class="acc-header" data-index="1">
+          <div class="acc-icon-wrap">💧</div>
+          <div class="acc-title-group">
+            <div class="acc-title">主題二：保濕與面膜使用</div>
+            <div class="acc-meta">片狀面膜、保濕成分、鎖水 vs 補水</div>
+          </div>
+          <div class="acc-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4.5l5 5 5-5" stroke="#6B7F8C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="vs-grid">
+              <div class="vs-wrong">
+                <div class="vs-label">✕ 常見錯誤觀念</div>
+                <div class="vs-text">「敏感泛紅、脫皮的時候趕快天天敷片狀面膜急救，大量補水就能讓皮膚退紅修復！」</div>
+              </div>
+              <div class="vs-right">
+                <div class="vs-label">✓ 醫學真相導正</div>
+                <div class="vs-text">發炎敏感時，片狀面膜的封閉效應會讓精華液中的防腐劑、促滲劑大量進入脆弱真皮層，極易引發嚴重接觸性皮膚炎。應停用面膜，改用成分單純的修護霜（如凡士林）<strong>鎖水</strong>。玻尿酸只補水，受損肌更需要<strong>神經醯胺等脂質鎖水</strong>。</div>
+              </div>
+            </div>
+            <div class="ref-box">
+              <div class="ref-icon">📖</div>
+              <div class="ref-text"><strong>文獻依據：</strong>Draelos ZD. "The science behind skin care: Moisturizers." J Cosmetic Dermatology (2018). 屏障受損時過度浸泡角質層會導致細胞間隙擴大，增加刺激物滲透率。</div>
+            </div>
+            <div class="acc-rule-hint">→ 對應黃金守則：REPAIR 修護</div>
+            <p style="font-size:12px;color:var(--teal-dark);background:var(--sky);border-radius:var(--r);padding:10px 14px;margin-top:10px;line-height:1.7;">💬 <strong>行為意向：</strong>下次皮膚泛紅時，我會先停用所有面膜，只擦一層薄薄的保濕霜，而不是加強敷面。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 主題三 -->
+      <div class="acc-item theme-3">
+        <div class="acc-header" data-index="2">
+          <div class="acc-icon-wrap">🌿</div>
+          <div class="acc-title-group">
+            <div class="acc-title">主題三：產品成分與「天然／防腐」迷思</div>
+            <div class="acc-meta">植物精油、無防腐劑標榜、成分安全性</div>
+          </div>
+          <div class="acc-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4.5l5 5 5-5" stroke="#6B7F8C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="vs-grid">
+              <div class="vs-wrong">
+                <div class="vs-label">✕ 常見錯誤觀念</div>
+                <div class="vs-text">「化學成分和防腐劑都會傷害皮膚！敏感肌只能擦 100% 純天然植萃或純植物精油的保養品才安全。」</div>
+              </div>
+              <div class="vs-right">
+                <div class="vs-label">✓ 醫學真相導正</div>
+                <div class="vs-text"><strong>天然不等於安全！</strong>許多植物精油含複雜芳香分子，是臨床上惡名昭彰的致敏原。「無防腐劑」產品若保存不當，細菌或黴菌孳生的危害遠大於合法添加的溫和防腐劑。</div>
+              </div>
+            </div>
+            <div class="ref-box">
+              <div class="ref-icon">📖</div>
+              <div class="ref-text"><strong>文獻依據：</strong>Kiken DA, Cohen DE. "Contact dermatitis to botanical extracts." Am J Contact Dermat (2002). 植物萃取物是引發接觸性皮膚炎的重要來源，對敏感肌而言風險極高。</div>
+            </div>
+            <div class="acc-rule-hint">→ 對應黃金守則：STOP 暫停</div>
+            <p style="font-size:12px;color:var(--teal-dark);background:var(--sky);border-radius:var(--r);padding:10px 14px;margin-top:10px;line-height:1.7;">💬 <strong>行為意向：</strong>下次買保養品時，我會先翻到成分表，看是否含香精或複雜植物萃取，而不是只看「天然」標語。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 主題四 -->
+      <div class="acc-item theme-4">
+        <div class="acc-header" data-index="3">
+          <div class="acc-icon-wrap">☀️</div>
+          <div class="acc-title-group">
+            <div class="acc-title">主題四：防曬與光保護</div>
+            <div class="acc-meta">UVA 穿透力、術後防曬、物理性防曬選擇</div>
+          </div>
+          <div class="acc-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4.5l5 5 5-5" stroke="#6B7F8C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="vs-grid">
+              <div class="vs-wrong">
+                <div class="vs-label">✕ 常見錯誤觀念</div>
+                <div class="vs-text">「敏感肌或剛打完雷射，皮膚太脆弱了，擦防曬乳會悶住毛孔。反正只要待在室內或趁陰天出門，就不需要防曬啦！」</div>
+              </div>
+              <div class="vs-right">
+                <div class="vs-label">✓ 醫學真相導正</div>
+                <div class="vs-text">長波紫外線 UVA 穿透力極強，<strong>能穿透雲層與室內玻璃</strong>。受損皮膚受紫外線照射極易誘發持續發炎與嚴重色素沉澱。若怕悶熱，首選<strong>純物理性防曬（氧化鋅）</strong>，或嚴格落實「硬防曬」（寬沿帽、抗UV傘）。</div>
+              </div>
+            </div>
+            <div class="ref-box">
+              <div class="ref-icon">📖</div>
+              <div class="ref-text"><strong>文獻依據：</strong>Taylor CR, et al. "Photoaging/photodamage and photoprotection." J Am Acad Dermatol (1990). 防曬是預防發炎後色素沉澱最關鍵的非藥物介入手段。</div>
+            </div>
+
+            <div style="margin:16px 0 4px;">
+              <p style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:10px;">UVA 穿透路徑示意</p>
+              <svg width="100%" viewBox="0 0 560 140" role="img" style="display:block;">
+                <title>UVA 穿透路徑：太陽→雲層→玻璃→皮膚</title>
+                <defs>
+                  <marker id="uva-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                    <path d="M2 2L8 5L2 8" fill="none" stroke="#C4933A" stroke-width="1.8" stroke-linecap="round"/>
+                  </marker>
+                  <marker id="uva-arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                    <path d="M2 2L8 5L2 8" fill="none" stroke="#E05C44" stroke-width="1.8" stroke-linecap="round"/>
+                  </marker>
+                </defs>
+                <!-- 太陽 -->
+                <circle cx="40" cy="54" r="22" fill="#FDF6E9" stroke="#C4933A" stroke-width="1.5"/>
+                <text x="40" y="49" text-anchor="middle" font-size="18" font-family="inherit">☀️</text>
+                <text x="40" y="68" text-anchor="middle" font-size="10" fill="#854F0B" font-family="inherit" font-weight="500">太陽</text>
+                <!-- 箭頭1 -->
+                <line x1="64" y1="54" x2="108" y2="54" stroke="#C4933A" stroke-width="1.5" stroke-dasharray="4 2" marker-end="url(#uva-arr)"/>
+                <text x="86" y="46" text-anchor="middle" font-size="9" fill="#C4933A" font-family="inherit">UVA</text>
+                <!-- 雲層 -->
+                <rect x="112" y="36" width="68" height="36" rx="8" fill="#F5F3F0" stroke="#D3D1C7" stroke-width="1"/>
+                <text x="146" y="53" text-anchor="middle" font-size="11" fill="#444441" font-family="inherit">⛅ 雲層</text>
+                <text x="146" y="66" text-anchor="middle" font-size="9" fill="#888780" font-family="inherit">穿透 ✓</text>
+                <!-- 箭頭2 -->
+                <line x1="182" y1="54" x2="226" y2="54" stroke="#C4933A" stroke-width="1.5" stroke-dasharray="4 2" marker-end="url(#uva-arr)"/>
+                <!-- 玻璃 -->
+                <rect x="230" y="36" width="68" height="36" rx="8" fill="#EBF4F8" stroke="#C8E2EE" stroke-width="1"/>
+                <text x="264" y="53" text-anchor="middle" font-size="11" fill="#1A5F78" font-family="inherit">🪟 玻璃</text>
+                <text x="264" y="66" text-anchor="middle" font-size="9" fill="#2A7F9E" font-family="inherit">穿透 ✓</text>
+                <!-- 箭頭3 -->
+                <line x1="300" y1="54" x2="344" y2="54" stroke="#E05C44" stroke-width="2" marker-end="url(#uva-arr2)"/>
+                <!-- 皮膚 -->
+                <rect x="348" y="28" width="80" height="52" rx="8" fill="#FDF0ED" stroke="#E05C44" stroke-width="1.5"/>
+                <text x="388" y="51" text-anchor="middle" font-size="11" fill="#7A3028" font-family="inherit">🧴 皮膚</text>
+                <text x="388" y="65" text-anchor="middle" font-size="9" fill="#E05C44" font-family="inherit" font-weight="700">累積傷害!</text>
+                <!-- 底部說明 -->
+                <text x="280" y="110" text-anchor="middle" font-size="11" fill="#6B7F8C" font-family="inherit">UVA 可穿透雲層與室內玻璃，即使陰天或在室內也需要防曬</text>
+                <!-- UVB 被阻擋的小說明 -->
+                <text x="146" y="90" text-anchor="middle" font-size="9" fill="#A8B8C2" font-family="inherit">UVB 被雲層部分阻擋</text>
+                <text x="264" y="90" text-anchor="middle" font-size="9" fill="#A8B8C2" font-family="inherit">UVB 被玻璃阻擋</text>
+              </svg>
+            </div>
+            <div class="acc-rule-hint">→ 對應黃金守則：PROTECT 防護</div>
+            <p style="font-size:12px;color:var(--teal-dark);background:var(--sky);border-radius:var(--r);padding:10px 14px;margin-top:10px;line-height:1.7;">💬 <strong>行為意向：</strong>從今天起，不管天氣陰晴、在室內或室外，我都會在出門前或坐窗邊前擦上防曬。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 主題五 -->
+      <div class="acc-item theme-5">
+        <div class="acc-header" data-index="4">
+          <div class="acc-icon-wrap">🏥</div>
+          <div class="acc-title-group">
+            <div class="acc-title">主題五：就醫時機與外用類固醇認識</div>
+            <div class="acc-meta">何時該看醫生、類固醇使用正確觀念</div>
+          </div>
+          <div class="acc-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4.5l5 5 5-5" stroke="#6B7F8C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="vs-grid">
+              <div class="vs-wrong">
+                <div class="vs-label">✕ 常見錯誤觀念</div>
+                <div class="vs-text">「皮膚狀況好像沒那麼嚴重，撐一下就好？自己上網查，或買天然藥草膏擦擦應該就夠了，不需要特地看醫生。」</div>
+              </div>
+              <div class="vs-right">
+                <div class="vs-label">✓ 醫學真相導正</div>
+                <div class="vs-text">出現以下情況請立即就醫：<strong>大片紅腫、劇烈搔癢、起水泡、持續惡化超過 3 天</strong>。外用類固醇有強度等級之分，臉部通常使用低強度；短期遵醫囑使用（3～5 天）是安全有效的，不必過度恐懼。自行忍耐只會延誤治療。</div>
+              </div>
+            </div>
+            <div class="ref-box">
+              <div class="ref-icon">📖</div>
+              <div class="ref-text"><strong>文獻依據：</strong>Elias PM, et al. "Skin barrier function." Curr Allergy Asthma Rep (2008). 慢性發炎對組織的累積傷害遠超過短期遵醫囑使用藥物的副作用風險。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /accordion -->
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- GOLDEN RULES -->
+<section id="rules">
+  <div class="container">
+    <p class="section-label reveal">Clinical Protocol</p>
+    <h2 class="section-h2 reveal reveal-delay-1">敏感發作時的「黃金四守則」</h2>
+    <p class="section-desc reveal reveal-delay-2">從緊急應對到日常防護，四個步驟依序執行，讓皮膚重回穩定。</p>
+
+    <div class="rules-timeline">
+      <div class="rule-step rule-step-1 reveal">
+        <div class="rule-orb">🛑</div>
+        <div class="rule-code">STEP 01 · STOP</div>
+        <div class="rule-name">暫停</div>
+        <div class="rule-desc">停用所有美白、抗老、去角質、酸類、含酒精化妝水與所有敷面類產品</div>
+      </div>
+      <div class="rule-step rule-step-2 reveal reveal-delay-1">
+        <div class="rule-orb">💦</div>
+        <div class="rule-code">STEP 02 · CLEAN</div>
+        <div class="rule-name">清潔</div>
+        <div class="rule-desc">改用室溫涼水洗臉，避免熱水。無出油時早晨可只用清水洗臉</div>
+      </div>
+      <div class="rule-step rule-step-3 reveal reveal-delay-2">
+        <div class="rule-orb">🌿</div>
+        <div class="rule-code">STEP 03 · REPAIR</div>
+        <div class="rule-name">修護</div>
+        <div class="rule-desc">使用成分單純、無香精的保濕劑（含神經醯胺乳霜或純凡士林）鎖水</div>
+      </div>
+      <div class="rule-step rule-step-4 reveal reveal-delay-3">
+        <div class="rule-orb">☀️</div>
+        <div class="rule-code">STEP 04 · PROTECT</div>
+        <div class="rule-name">防護</div>
+        <div class="rule-desc">嚴格落實「硬防曬」（撐傘、戴帽），或選用純物理性防曬（氧化鋅／二氧化鈦）</div>
+      </div>
+    </div>
+
+    <div class="rules-note reveal">
+      <div class="rules-note-icon">⚡</div>
+      <div class="rules-note-text">
+        <strong>嚴重時請務必就醫。</strong>出現大片紅腫、起水泡、劇烈搔癢或惡化超過 3 天，以上守則僅為輔助，不能取代皮膚科醫師的診斷與治療。遵醫囑使用外用類固醇（低強度、短期 3～5 天）是安全有效的，不必過度恐懼。
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- DECISION TREE -->
+<section id="decision">
+  <div class="container">
+    <p class="section-label reveal">互動決策工具</p>
+    <h2 class="section-h2 reveal reveal-delay-1">我現在應該怎麼辦？</h2>
+    <p class="section-desc reveal reveal-delay-2">根據你目前的症狀，一步步找到對應的處理方式。</p>
+    <div style="margin-top:32px;" class="reveal reveal-delay-2">
+      <div class="dt-wrap">
+        <div class="dt-breadcrumb" id="dt-bc"></div>
+        <div id="dt-area"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <p class="section-label reveal">About</p>
+    <h2 class="section-h2 reveal reveal-delay-1" style="margin-bottom:28px;">關於本專題研究</h2>
+    <div class="about-card reveal reveal-delay-2">
+      <div class="about-card-top">
+        <div class="about-card-cell">
+          <div class="about-cell-label">單位</div>
+          <div class="about-cell-value">國立臺中科技大學</div>
+          <div class="about-cell-sub">美容系 專題研究計畫</div>
+        </div>
+        <div class="about-card-cell">
+          <div class="about-cell-label">指導教授</div>
+          <div class="about-cell-value">林恩仕 教授</div>
+          <div class="about-cell-sub">National Taichung University of Science and Technology</div>
+        </div>
+        <div class="about-card-cell">
+          <div class="about-cell-label">研究生</div>
+          <div class="about-cell-value">孫嫚庭</div>
+          <div class="about-cell-sub">美容系 專題研究</div>
+        </div>
+      </div>
+      <div class="about-card-body">
+        <p>本衛教平台為「敏感肌修護衛教教材之建構與知識提升效果研究」的一部分。目標是將皮膚科醫學文獻與醫院衛教資料，轉化為一般民眾容易理解且可操作的圖文教材與互動小測驗，協助敏感肌族群不再因錯誤觀念而越保養越差。所有衛教內容皆參考臨床治療指引及國內外大型醫學中心公開資料。</p>
+      </div>
+      <div style="border-top:1px solid #E8EEF2;padding:18px 24px;background:var(--stone);">
+        <p style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:10px;">研究設計說明</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;">
+          <div style="background:white;border-radius:var(--r);padding:12px 14px;border:1px solid #E8EEF2;">
+            <p style="font-size:11px;font-weight:700;color:var(--slate-mid);margin-bottom:4px;">研究對象</p>
+            <p style="font-size:13px;color:var(--ink);">一般民眾及美容相關學員</p>
+          </div>
+          <div style="background:white;border-radius:var(--r);padding:12px 14px;border:1px solid #E8EEF2;">
+            <p style="font-size:11px;font-weight:700;color:var(--slate-mid);margin-bottom:4px;">研究設計</p>
+            <p style="font-size:13px;color:var(--ink);">前後測準實驗設計（衛教介入）</p>
+          </div>
+          <div style="background:white;border-radius:var(--r);padding:12px 14px;border:1px solid #E8EEF2;">
+            <p style="font-size:11px;font-weight:700;color:var(--slate-mid);margin-bottom:4px;">測量工具</p>
+            <p style="font-size:13px;color:var(--ink);">15 題是非知識測驗（前後測同題）</p>
+          </div>
+          <div style="background:white;border-radius:var(--r);padding:12px 14px;border:1px solid #E8EEF2;">
+            <p style="font-size:11px;font-weight:700;color:var(--slate-mid);margin-bottom:4px;">衛教介入</p>
+            <p style="font-size:13px;color:var(--ink);">閱覽本衛教網站五大主題內容</p>
+          </div>
+        </div>
+      </div>
+      <div class="ethics-box">
+        <span style="font-size:15px; flex-shrink:0;">🔒</span>
+        <span><strong>研究倫理宣告：</strong>本平台收集之問卷資料僅供專題學術分析使用，絕對保密且不揭露個人身份，請安心填寫。</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ACTION -->
+<section id="action">
+  <div class="container">
+    <div class="action-inner reveal">
+      <div class="action-label">參與研究</div>
+      <h2 class="action-h2">讀完了嗎？幫我們填後測！</h2>
+      <p class="action-desc">您的回饋是本專題研究最寶貴的數據。後測問卷約需 3 分鐘，感謝您的協助！</p>
+      <div class="action-btns">
+        <a href="https://forms.gle/o1PQ1mGXoRym5rF28" target="_blank" rel="noopener" class="btn-white">
+          📋 填寫衛教後測問卷
+        </a>
+        <a href="https://lin.ee/wB7OHRlo" target="_blank" rel="noopener" class="btn-line">
+          💬 加入 LINE 諮詢管道
+        </a>
+      </div>
+      <p class="action-note">測驗約 3 分鐘 · 資料保密 · 僅供學術研究</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>NUTC 敏感肌修護衛教平台</strong>
+        國立臺中科技大學 美容系<br>
+        指導教授：林恩仕教授 ／ 研究生：孫嫚庭<br>
+        敏感肌修護衛教教材之建構與知識提升效果研究
+      </div>
+      <div class="footer-links">
+        <a href="#concept">觀念釐清</a>
+        <a href="#quiz">問卷解析</a>
+        <a href="#themes">五大主題</a>
+        <a href="#rules">黃金守則</a>
+        <a href="https://lin.ee/wB7OHRlo" target="_blank">LINE 諮詢管道</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 國立臺中科技大學美容系 · 本網站內容為衛教專題研究之用，無法取代專業醫師之當面診斷與治療。若有嚴重肌膚不適，請務必就醫。
+    </div>
+  </div>
+</footer>
+
+
+<!-- POST-TEST NUDGE -->
+<div id="posttest-nudge">
+  <button class="nudge-close" onclick="this.parentElement.style.display='none'" aria-label="關閉">×</button>
+  <p>🎉 <strong>你已閱讀完五大主題！</strong><br>現在填後測問卷，幫助研究更完整。</p>
+  <a href="https://forms.gle/o1PQ1mGXoRym5rF28" target="_blank" rel="noopener">📋 立即填寫後測（3 分鐘）</a>
+</div>
+
+<!-- READING PROGRESS -->
+<div id="read-progress"><div id="read-progress-fill"></div></div>
+
+<!-- LINE FLOAT -->
+<a href="https://lin.ee/wB7OHRlo" target="_blank" rel="noopener" class="line-float" aria-label="加入 LINE 諮詢管道">💬</a>
+
+<script>
+// ── HABIT QUIZ ──
+(function(){
+  const Qs = [
+    {
+      scene: "🛁  洗澡情境",
+      q: "昨天洗澡，你的蓮蓬頭水溫大概是？",
+      opts: [
+        { t:"燙到有點冒蒸氣", s:"泡完感覺很放鬆", score:3, flag:"hot_water" },
+        { t:"溫熱，手放進去有點燙", s:"一般習慣的溫度", score:2, flag:"hot_water" },
+        { t:"溫涼，不燙也不冷", s:"大概 37°C 左右", score:0 },
+        { t:"我通常用冷水", s:"", score:0 }
+      ]
+    },
+    {
+      scene: "☀️  昨天出門",
+      q: "你昨天離開家，有擦防曬嗎？",
+      opts: [
+        { t:"沒有，昨天是陰天 / 在室內", s:"不需要吧", score:3, flag:"no_sunscreen" },
+        { t:"沒有，懶得擦", s:"偶爾才擦", score:2, flag:"no_sunscreen" },
+        { t:"有擦，但只有出門前擦沒有補擦", s:"", score:1 },
+        { t:"有擦，而且有補擦", s:"已經習慣了", score:0 }
+      ]
+    },
+    {
+      scene: "🛍️  上次買保養品",
+      q: "你上一罐保養品，是因為什麼買的？",
+      opts: [
+        { t:"標榜「純天然」「植萃精油」「無防腐劑」", s:"覺得天然的比較安全", score:3, flag:"natural_myth" },
+        { t:"網紅或朋友大力推薦", s:"看起來效果很好", score:1 },
+        { t:"皮膚科醫師或藥師建議", s:"信任專業意見", score:0 },
+        { t:"查過成分才決定", s:"神經醯胺、玻尿酸之類", score:0 }
+      ]
+    },
+    {
+      scene: "😴  最近一週",
+      q: "最近 7 天，你幾天是凌晨 12 點後才睡？",
+      opts: [
+        { t:"5 天以上", s:"幾乎是日常", score:3, flag:"sleep" },
+        { t:"3 ～ 4 天", s:"忙起來就晚睡", score:2, flag:"sleep" },
+        { t:"1 ～ 2 天", s:"偶爾熬夜", score:1 },
+        { t:"幾乎沒有", s:"早睡習慣", score:0 }
+      ]
+    },
+    {
+      scene: "🔴  上次皮膚有點紅",
+      q: "上次臉上泛紅或起小疹子，你怎麼處理的？",
+      opts: [
+        { t:"加強保養，多敷面膜急救補水", s:"補水應該有幫助", score:3, flag:"mask" },
+        { t:"換成標榜天然溫和的產品繼續用", s:"可能是之前的產品不適合", score:2, flag:"natural_myth" },
+        { t:"照原本保養流程，沒有特別改變", s:"應該自己會好吧", score:1, flag:"no_change" },
+        { t:"先暫停所有保養，觀察幾天", s:"讓皮膚先休息", score:0 },
+        { t:"我最近沒有這個狀況", s:"", score:0 }
+      ]
+    }
+  ];
+
+  const FLAGS = {
+    hot_water:    { icon:"🌡️", title:"熱水洗澡 / 洗臉", body:"水溫過高會溶解天然皮脂膜，洗完那種「緊繃感」其實是屏障受損的訊號。", link:"主題一：日常清潔", anchor:"themes" },
+    no_sunscreen: { icon:"☀️", title:"陰天 / 室內不防曬", body:"UVA 能穿透玻璃與雲層，是色素沉澱和皮膚老化的主因，不管在哪都需要防護。", link:"主題四：防曬與光保護", anchor:"themes" },
+    natural_myth: { icon:"🌿", title:"天然 = 安全的迷思", body:"植物精油含複雜芳香分子，是臨床常見致敏原；「無防腐劑」產品若保存不當反而更危險。", link:"主題三：成分與天然迷思", anchor:"themes" },
+    sleep:        { icon:"🌙", title:"長期熬夜", body:"睡眠不足讓皮質醇上升，皮膚屏障防禦力直接下降，所有保養效果都會打折。", link:"主題三：作息與隱形傷害", anchor:"themes" },
+    mask:         { icon:"💧", title:"泛紅時敷面膜急救", body:"片狀面膜的封閉效應讓防腐劑大量滲入脆弱屏障——發炎時敷面膜只會更糟。", link:"主題二：保濕與面膜", anchor:"themes" },
+    no_change:    { icon:"⏳", title:"照原本流程繼續保養", body:"皮膚泛紅或起疹子是屏障的求救訊號，此時繼續一般保養流程可能讓刺激持續累積，建議先暫停酸類、精油、多步驟產品，以最簡單的清潔＋保濕為主。", link:"主題一：日常清潔", anchor:"themes" }
+  };
+
+  let cur = 0, ans = Array(Qs.length).fill(null),
+      scrs = Array(Qs.length).fill(0), flags = [];
+
+  const $ = id => document.getElementById(id);
+
+  function dots() {
+    $('qz-dots').innerHTML = Qs.map((_,i) =>
+      `<div style="height:4px;flex:1;border-radius:2px;background:${i<cur?'var(--teal)':i===cur?'var(--slate-light)':'var(--sky-mid)'}"></div>`
+    ).join('');
+    $('qz-lbl').textContent = (cur+1) + ' / ' + Qs.length;
+  }
+
+  function renderQ(idx) {
+    $('qz-intro').style.display = idx===0 ? '' : 'none';
+    const pg = $('qz-prog'); pg.style.display='flex'; dots();
+    const q = Qs[idx];
+    $('qz-area').innerHTML = `
+      <div style="background:var(--white);border:1.5px solid #E0EBF0;border-radius:var(--r-lg);padding:1.25rem 1.5rem;margin-bottom:1rem;">
+        <div style="font-size:12px;color:var(--slate-light);margin-bottom:.4rem;">${q.scene}</div>
+        <div style="font-size:15px;font-weight:700;color:var(--ink);line-height:1.5;margin-bottom:1rem;">${q.q}</div>
+        <div id="qz-opts" style="display:flex;flex-direction:column;gap:8px;">
+          ${q.opts.map((o,i)=>`
+            <div class="qz-opt" data-i="${i}" data-score="${o.score}" data-flag="${o.flag||''}"
+              style="display:flex;align-items:flex-start;gap:11px;padding:11px 14px;border:1.5px solid ${ans[idx]===i?'var(--teal)':'#E0EBF0'};border-radius:var(--r);cursor:pointer;background:${ans[idx]===i?'var(--sky)':'var(--white)'};transition:all .15s;">
+              <div style="width:16px;height:16px;border-radius:50%;border:1.5px solid ${ans[idx]===i?'var(--teal)':'var(--slate-light)'};flex-shrink:0;margin-top:2px;background:${ans[idx]===i?'var(--teal)':'transparent'};display:flex;align-items:center;justify-content:center;">
+                ${ans[idx]===i?`<div style="width:5px;height:5px;border-radius:50%;background:white;"></div>`:''}
+              </div>
+              <div>
+                <div style="font-size:13.5px;color:var(--ink);line-height:1.4;">${o.t}</div>
+                ${o.s?`<div style="font-size:12px;color:var(--slate-mid);margin-top:2px;">${o.s}</div>`:''}
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>
+      <div style="display:flex;justify-content:flex-end;">
+        <button id="qz-next" style="background:var(--teal);color:white;border:none;padding:10px 22px;border-radius:99px;font-size:14px;font-weight:700;cursor:pointer;opacity:${ans[idx]!==null?1:.3};pointer-events:${ans[idx]!==null?'auto':'none'};transition:opacity .2s;">
+          ${idx<Qs.length-1?'下一個場景 →':'看結果 →'}
+        </button>
+      </div>`;
+
+    $('qz-opts').addEventListener('click', e => {
+      const o = e.target.closest('.qz-opt'); if(!o) return;
+      const i=parseInt(o.dataset.i), sc=parseInt(o.dataset.score), f=o.dataset.flag;
+      ans[idx]=i; scrs[idx]=sc;
+      const thisOpts = Qs[idx].opts.map(op=>op.flag||'');
+      flags = flags.filter(x => !thisOpts.includes(x));
+      if(f) flags.push(f);
+      renderQ(idx);
+    });
+
+    const btn = $('qz-next');
+    if(btn) btn.addEventListener('click', ()=>{
+      if(ans[idx]===null) return;
+      if(idx<Qs.length-1){ cur++; renderQ(cur); }
+      else showResult();
+    });
+  }
+
+  function showResult() {
+    $('qz-area').innerHTML='';
+    $('qz-prog').style.display='flex'; dots();
+    $('qz-dots').querySelectorAll('div').forEach(d=>d.style.background='var(--teal)');
+
+    const total = scrs.reduce((a,b)=>a+b,0), max=15;
+    const pct = Math.round(total/max*100);
+    const uniqueFlags = [...new Set(flags)].slice(0,3);
+
+    let face,tagBg,tagColor,tagText,title,desc;
+    if(pct<=20){
+      face='😊'; tagBg='var(--green-light)'; tagColor='var(--green)'; tagText='習慣良好';
+      title='你的日常習慣其實很不錯';
+      desc='大多數的選擇都符合皮膚科建議。繼續往下看，了解「為什麼這樣對」——知道原理，狀態才能長久維持。';
+    } else if(pct<=55){
+      face='🤔'; tagBg='var(--gold-light)'; tagColor='var(--gold)'; tagText='有幾個習慣值得注意';
+      title='膚況還好，但有些習慣正在悄悄累積傷害';
+      desc='皮膚屏障的損傷是累積性的——現在看起來還好，不代表沒有問題。下面是你的具體情況。';
+    } else {
+      face='😬'; tagBg='var(--accent-light)'; tagColor='var(--accent)'; tagText='高風險・建議調整';
+      title='你的皮膚正在默默承受壓力';
+      desc='多個日常習慣都在消耗屏障的耐受力。就算現在膚況尚可，這是「慢性損傷」的典型模式，某天會突然爆發。';
+    }
+
+    const findingsHtml = uniqueFlags.length > 0
+      ? `<div style="background:var(--stone);border-radius:var(--r);padding:1rem 1.25rem;margin:1.25rem 0;">
+          <p style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-mid);margin-bottom:.75rem;">你的具體情況</p>
+          ${uniqueFlags.map(f=>{
+            const d=FLAGS[f];
+            return `<div style="display:flex;gap:10px;padding:8px 0;border-bottom:1px solid #E8EEF2;align-items:flex-start;">
+              <span style="font-size:15px;flex-shrink:0;line-height:1.5;">${d.icon}</span>
+              <div>
+                <p style="font-size:13px;font-weight:700;color:var(--ink);margin-bottom:2px;">${d.title}</p>
+                <p style="font-size:13px;color:var(--slate);line-height:1.5;">${d.body}</p>
+                <a onclick="scrollToSection('${d.anchor}')" style="font-size:12px;color:var(--teal);cursor:pointer;font-weight:700;">→ 閱讀「${d.link}」了解詳情</a>
+              </div>
+            </div>`;
+          }).join('')}
+        </div>`
+      : `<div style="background:var(--stone);border-radius:var(--r);padding:1rem 1.25rem;margin:1.25rem 0;">
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <span style="font-size:15px;">✅</span>
+            <p style="font-size:13px;color:var(--slate);line-height:1.5;">習慣符合皮膚科建議，繼續閱讀衛教內容了解背後的科學原理。</p>
+          </div>
+        </div>`;
+
+    const r = $('qz-result');
+    r.style.display='block';
+    r.innerHTML=`
+      <div style="text-align:center;margin-bottom:1.25rem;">
+        <div style="font-size:48px;margin-bottom:.75rem;line-height:1;">${face}</div>
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 14px;border-radius:99px;background:${tagBg};color:${tagColor};margin-bottom:.6rem;">${tagText}</span>
+        <h3 style="font-family:var(--serif);font-size:18px;font-weight:700;color:var(--ink);margin-bottom:.5rem;line-height:1.4;">${title}</h3>
+        <p style="font-size:13.5px;color:var(--slate-mid);line-height:1.7;max-width:400px;margin:0 auto;">${desc}</p>
+      </div>
+      ${findingsHtml}
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <button onclick="scrollToSection('concept')" style="background:var(--teal);color:white;border:none;padding:13px 20px;border-radius:99px;font-size:14px;font-weight:700;cursor:pointer;transition:opacity .2s;">繼續閱讀，搞懂背後的原因 →</button>
+        <button onclick="shareQuizResult()" id="share-btn" style="background:none;border:1.5px solid var(--teal);color:var(--teal);padding:10px 20px;border-radius:99px;font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:6px;">📤 分享我的檢測結果</button>
+        <button onclick="resetQuiz()" style="background:none;border:1.5px solid #E0EBF0;color:var(--slate);padding:10px 20px;border-radius:99px;font-size:13px;cursor:pointer;">重新測驗</button>
+      </div>`;
+  }
+
+  
+window.shareQuizResult = function(){
+  const btn = document.getElementById('share-btn');
+
+  // 直接從全域變數取結果（不靠 DOM 查詢）
+  let tagText = '檢測完成';
+  let titleText = '';
+  let findingTexts = [];
+
+  // 從結果區塊抓純文字，容錯多重 class 名稱
+  const resultEl = document.getElementById('qz-result');
+  if(resultEl){
+    // 抓等級標籤（可能是 .r-tag 或 inline span）
+    const allSpans = resultEl.querySelectorAll('span, div');
+    allSpans.forEach(el => {
+      const txt = el.textContent.trim();
+      if(['習慣良好','有幾個習慣值得注意','高風險・建議調整'].includes(txt)){
+        tagText = txt;
+      }
+    });
+    // 抓標題（最大的字）
+    const h3 = resultEl.querySelector('h3, .r-title, [style*="font-size:18"]');
+    if(h3) titleText = h3.textContent.trim();
+    // 抓高風險習慣名稱
+    const strongs = resultEl.querySelectorAll('strong');
+    strongs.forEach(s => {
+      const t = s.textContent.trim();
+      if(t && t !== tagText && t !== titleText && t.length < 20 && !t.includes('：')){
+        findingTexts.push(t);
+      }
+    });
+  }
+
+  let text = '【敏感肌生活習慣檢測結果】\n';
+  if(tagText) text += tagText + '\n';
+  if(titleText) text += titleText + '\n\n';
+  if(findingTexts.length > 0){
+    text += '我的高風險習慣：\n';
+    findingTexts.slice(0,3).forEach(f => { text += '・' + f + '\n'; });
+    text += '\n';
+  }
+  text += '想知道你的結果嗎？來測看看 👉 https://sites.google.com/view/sensitiveskinbeauty';
+
+  function doShare(){
+    if(navigator.share){
+      navigator.share({ title:'敏感肌習慣檢測', text: text, url: 'https://sites.google.com/view/sensitiveskinbeauty' }).catch(()=>{ doCopy(); });
+    } else {
+      doCopy();
+    }
+  }
+
+  function doCopy(){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(showSuccess).catch(fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  function showSuccess(){
+    if(btn){
+      btn.textContent = '✓ 已複製到剪貼簿！';
+      btn.style.background = '#EBF6F0';
+      btn.style.borderColor = '#2D7A56';
+      btn.style.color = '#2D7A56';
+      setTimeout(()=>{
+        btn.innerHTML = '📤 分享我的檢測結果';
+        btn.style.background = '';
+        btn.style.borderColor = 'var(--teal)';
+        btn.style.color = 'var(--teal)';
+      }, 2500);
+    }
+  }
+
+  function fallback(){
+    // 最後備案：用 textarea + execCommand
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0;';
+    document.body.appendChild(ta);
+    ta.focus(); ta.select();
+    try {
+      document.execCommand('copy');
+      showSuccess();
+    } catch(e){
+      if(btn) btn.textContent = '請長按此按鈕手動複製';
+    }
+    document.body.removeChild(ta);
+  }
+
+  doShare();
+};
+
+window.resetQuiz = function(){
+    cur=0; ans=Array(Qs.length).fill(null); scrs=Array(Qs.length).fill(0); flags=[];
+    $('qz-result').style.display='none';
+    $('qz-prog').style.display='none';
+    $('qz-intro').style.display='';
+    renderQ(0);
+  };
+
+  window.scrollToSection = function(id){
+    const nav = document.getElementById('nav');
+    const el = document.getElementById(id);
+    if(!el) return;
+    const top = el.getBoundingClientRect().top + window.pageYOffset - (nav?.offsetHeight||60) - 12;
+    window.scrollTo({ top, behavior:'smooth' });
+  };
+
+  renderQ(0);
+})();
+</script>
+
+
+<script>
+// ── BARRIER DIAGRAM ──
+(function(){
+  const BINFO = {
+    healthy:{ tag:'正常狀態', cls:'ok', title:'完整的皮膚屏障：磚牆結構', body:'角質細胞（磚塊）緊密排列，神經醯胺等脂質填滿細胞間隙。皮脂膜覆蓋最外層。外來刺激無法滲透，水分不易散失，皮膚保持濕潤穩定。' },
+    damaged:{ tag:'受損狀態', cls:'bad', title:'屏障破損：細胞間隙變大，水分大量流失', body:'過度清潔、去角質、熬夜等使脂質流失，細胞間出現裂縫。水分從裂縫蒸發（TEWL 升高），刺激物趁虛而入，引發灼熱、刺痛、發炎。' },
+    repair:{ tag:'修護中', cls:'ok', title:'補充神經醯胺：逐步填補裂縫', body:'外用含神經醯胺的修護霜補充脂質，填補裂縫。停用刺激性產品讓屏障自然重建。這就是受損時「少即是多」的原因。' }
+  };
+  function cells(mode){
+    const rows=[{y:92,n:5,h:22,off:0},{y:118,n:5,h:22,off:30},{y:144,n:5,h:22,off:0}];
+    const damaged=mode==='damaged'; let html='';
+    rows.forEach(r=>{
+      const maxW=340, gap=4;
+      const cw=Math.floor((maxW-(r.n+1)*gap)/r.n);
+      for(let i=0;i<r.n;i++){
+        const cx=gap+r.off+i*(cw+gap);
+        const fill=damaged?'#F5C8B0':'#F0C8A8';
+        const st=damaged?'#E8956A':'#D4A080';
+        html+=`<rect x="${cx}" y="${r.y}" width="${cw}" height="${r.h}" rx="3" fill="${fill}" stroke="${st}" stroke-width="0.5"/>`;
+      }
+    });
+    return html;
+  }
+  function lipids(mode){
+    if(mode==='damaged') return '';
+    const col=mode==='repair'?'#9CC4A8':'#C4A87A';
+    const op=mode==='repair'?0.5:1;
+    let h='';
+    for(let i=0;i<6;i++){const cx=50+i*70; h+=`<line x1="${cx}" y1="108" x2="${cx+44}" y2="108" stroke="${col}" stroke-width="2.5" stroke-linecap="round" opacity="${op}"/>`;}
+    return h;
+  }
+  function water(mode){
+    const lost = mode==='damaged';
+    const repair = mode==='repair';
+    let h='';
+
+    if(!lost){
+      // 正常/修護：水分子安靜待在角質層內，飽滿藍圓
+      const pts=[[45,108],[100,122],[155,110],[215,124],[270,105],[330,118],[385,107],[445,120],[75,130],[175,136],[295,132],[415,128]];
+      const col = repair ? '#5BB8D4' : '#3EB0D8';
+      const op  = repair ? 0.55 : 0.8;
+      pts.forEach(([x,y])=>{
+        h+=`<circle cx="${x}" cy="${y}" r="4" fill="${col}" opacity="${op}"/>`;
+        h+=`<circle cx="${x}" cy="${y}" r="2" fill="white" opacity="${op*0.4}"/>`;
+      });
+    } else {
+      // 受損：水分大量逸出，向上飄離，帶箭頭
+      // 殘留在角質層內的（少且淡）
+      const remain=[[120,115],[240,120],[360,112],[440,125]];
+      remain.forEach(([x,y])=>{
+        h+=`<circle cx="${x}" cy="${y}" r="3" fill="#A8D4E8" opacity="0.35"/>`;
+      });
+      // 逸出的水分子：從角質層往上飄
+      const escape=[
+        [55, 88],[110,75],[175,82],[235,68],[300,78],[355,65],[415,80],[470,72],
+        [80, 55],[200,48],[320,52],[440,58]
+      ];
+      escape.forEach(([x,y],i)=>{
+        const size = i < 8 ? 4.5 : 3.5;
+        const op = i < 8 ? 0.85 : 0.65;
+        h+=`<circle cx="${x}" cy="${y}" r="${size}" fill="#3EB0D8" opacity="${op}"/>`;
+        h+=`<circle cx="${x}" cy="${y}" r="${size*0.45}" fill="white" opacity="${op*0.5}"/>`;
+        // 向上箭頭
+        const arrowY = y + size + 2;
+        h+=`<path d="M${x},${arrowY} L${x},${y+20}" stroke="#2A7F9E" stroke-width="1" stroke-dasharray="3 2" opacity="0.5" fill="none"/>`;
+        h+=`<path d="M${x-3},${arrowY+5} L${x},${arrowY} L${x+3},${arrowY+5}" stroke="#2A7F9E" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>`;
+      });
+      // TEWL 標示：只保留裂縫線，hint 文字已在 SVG 頂部顯示
+      // 波浪狀括弧暗示「屏障裂縫」
+      h+=`<path d="M30,92 Q55,86 80,92 Q105,98 130,92 Q155,86 180,92 Q205,98 230,92 Q255,86 280,92 Q305,98 330,92 Q355,86 380,92 Q405,98 430,92 Q455,86 480,92" stroke="#E05C44" stroke-width="1.2" fill="none" opacity="0.4" stroke-dasharray="4 3"/>`;
+      h+=`<text x="490" y="96" font-size="9" fill="#E05C44" font-family="inherit" opacity="0.7">裂縫</text>`;
+    }
+    return h;
+  }
+  function irritants(mode){
+    if(mode!=='damaged') return '';
+    let h='<text x="220" y="14" text-anchor="middle" font-size="10" fill="#E05C44" font-family="inherit">刺激物入侵</text>';
+    [[150,16],[280,16],[380,16]].forEach(([x,y])=>{
+      h+=`<line x1="${x}" y1="${y+2}" x2="${x}" y2="68" stroke="#E05C44" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.55" marker-end="url(#barr-red)"/>`;
+      h+=`<polygon points="${x-5},${y-2} ${x+5},${y-2} ${x},${y+7}" fill="#E05C44" opacity="0.65"/>`;
+    });
+    return h;
+  }
+  function ceramides(mode){
+    if(mode!=='repair') return {h:'',op:0};
+    let h='<style>@keyframes cerFill{0%{opacity:0;transform:scaleX(0)}100%{opacity:1;transform:scaleX(1)}}@keyframes cerPop{0%{opacity:0;transform:scale(0)}100%{opacity:1;transform:scale(1)}}</style>';
+    const pts=[[55,112],[145,127],[235,117],[340,122],[435,110]];
+    pts.forEach(([x,y],i)=>{
+      const delay=(i*0.15).toFixed(2);
+      h+=`<g style="transform-origin:${x}px ${y}px;animation:cerFill .5s ease ${delay}s both;">
+        <ellipse cx="${x}" cy="${y}" rx="22" ry="6" fill="#2D7A56" opacity="0.3"/>
+        <ellipse cx="${x}" cy="${y}" rx="16" ry="4" fill="#2D7A56" opacity="0.2"/>
+      </g>`;
+      h+=`<g style="transform-origin:${x}px ${y}px;animation:cerPop .4s ease ${(parseFloat(delay)+0.2).toFixed(2)}s both;">
+        <circle cx="${x}" cy="${y}" r="7" fill="#EBF6F0" stroke="#2D7A56" stroke-width="1"/>
+        <text x="${x}" y="${y+4}" text-anchor="middle" font-size="9" fill="#2D7A56" font-family="inherit" font-weight="700">C</text>
+      </g>`;
+    });
+    h+=`<text x="220" y="175" text-anchor="middle" font-size="10" fill="#2D7A56" font-family="inherit" font-weight="500">神經醯胺填補細胞間隙中…</text>`;
+    return {h, op:1};
+  }
+  window.setBarrier = function(mode){
+    const hint = document.getElementById('bsvg-mode-hint');
+    if(hint){
+      const msgs = { healthy:'✓ 屏障完整，水分留住', damaged:'⚠ 屏障裂縫，水分大量流失', repair:'🌿 補充神經醯胺，填補裂縫中' };
+      hint.textContent = msgs[mode] || '';
+      hint.setAttribute('fill', mode==='damaged'?'#E05C44': mode==='repair'?'#2D7A56':'#2A7F9E');
+    }
+    document.querySelectorAll('.barrier-tab').forEach(t=>t.classList.toggle('on',t.getAttribute('onclick').includes("'"+mode+"'")));
+    document.getElementById('bcells').innerHTML=cells(mode);
+    document.getElementById('blipids').innerHTML=lipids(mode);
+    document.getElementById('bwater').innerHTML=water(mode);
+    document.getElementById('birrits').innerHTML=irritants(mode);
+    const cer=ceramides(mode);
+    const cg=document.getElementById('bcers'); cg.innerHTML=cer.h; cg.setAttribute('opacity',cer.op);
+    document.getElementById('barrows').innerHTML='';
+    const sb=document.getElementById('bsebum');
+    if(mode==='damaged'){sb.setAttribute('opacity','0.3');}
+    else if(mode==='repair'){sb.setAttribute('opacity','0.7');sb.setAttribute('fill','#D4E8D8');}
+    else{sb.setAttribute('opacity','1');sb.setAttribute('fill','#FDEBD0');}
+    const info=BINFO[mode];
+    const panel=document.getElementById('binfo');
+    panel.style.opacity='0';
+    setTimeout(()=>{
+      document.getElementById('binfo-tag').textContent=info.tag;
+      document.getElementById('binfo-tag').className='barrier-info-tag '+info.cls;
+      document.getElementById('binfo-title').textContent=info.title;
+      document.getElementById('binfo-body').textContent=info.body;
+      panel.style.opacity='1';
+    },150);
+  };
+  setBarrier('healthy');
+})();
+</script>
+
+<script>
+// ── DECISION TREE ──
+(function(){
+  const TREE={
+    start:{label:'症狀評估',q:'你現在皮膚最明顯的狀況是？',opts:[
+      {ic:'🔴',t:'明顯大片紅腫、起水泡或劇烈搔癢',s:'範圍超過一個手掌大',nx:'severe'},
+      {ic:'🌡️',t:'輕微泛紅、刺痛或灼熱感',s:'觸碰或用保養品後加重',nx:'mild_red'},
+      {ic:'💧',t:'乾燥、緊繃、細紋變明顯',s:'洗完臉特別明顯',nx:'dry'},
+      {ic:'✨',t:'出油、毛孔粗大、冒小粉刺',s:'T字部位特別嚴重',nx:'oily'},
+      {ic:'😐',t:'沒有特別症狀，想了解怎麼預防',s:'',nx:'prevention'},
+    ]},
+    severe:{label:'嚴重症狀',q:'紅腫搔癢持續多久了？',opts:[
+      {ic:'⏱️',t:'剛發生，幾小時內',s:'使用新產品後或接觸某東西後',nx:'severe_new'},
+      {ic:'📅',t:'超過 3 天還沒好轉，或反覆發作',s:'',nx:'see_doctor'},
+      {ic:'🔥',t:'非常嚴重，範圍持續擴大或伴隨發燒',s:'',nx:'er'},
+    ]},
+    severe_new:{label:'急性反應',q:'最近有使用過新的保養品嗎？',opts:[
+      {ic:'🧴',t:'有，使用了新產品之後才發生',s:'',nx:'stop_product'},
+      {ic:'❓',t:'沒有用新產品，不明原因',s:'',nx:'see_doctor'},
+    ]},
+    mild_red:{label:'輕微泛紅',q:'你最近有做過以下哪件事嗎？',opts:[
+      {ic:'🌊',t:'用很熱的水洗臉或泡澡',s:'',nx:'result_clean'},
+      {ic:'💆',t:'做了醫美療程（術後 1～2 週內）',s:'',nx:'result_postcare'},
+      {ic:'🌿',t:'換了含天然精油或香精的新產品',s:'',nx:'stop_product'},
+      {ic:'😰',t:'最近壓力大或連續熬夜',s:'',nx:'result_lifestyle'},
+      {ic:'🤷',t:'以上都沒有',s:'',nx:'see_doctor'},
+    ]},
+    dry:{label:'乾燥緊繃',q:'你的保濕方式是？',opts:[
+      {ic:'💧',t:'只擦化妝水或玻尿酸，沒有擦乳霜',s:'',nx:'result_moisturize'},
+      {ic:'🧼',t:'早晚都用洗面乳洗臉',s:'',nx:'result_clean'},
+      {ic:'🌬️',t:'長期待在冷氣或暖氣空間',s:'',nx:'result_environment'},
+      {ic:'✅',t:'有擦乳霜，但還是很乾，想就醫確認',s:'',nx:'see_doctor'},
+    ]},
+    oily:{label:'出油粉刺',q:'你每天洗幾次臉？',opts:[
+      {ic:'3️⃣',t:'3 次或以上',s:'覺得越洗越出油還是洗',nx:'result_overwash'},
+      {ic:'2️⃣',t:'早晚 2 次，使用洗面乳',s:'',nx:'result_oily_normal'},
+      {ic:'1️⃣',t:'只洗 1 次，早上用清水',s:'',nx:'result_oily_ok'},
+    ]},
+    prevention:{label:'預防保養',q:'你最想知道哪個方向？',opts:[
+      {ic:'🛡️',t:'日常基礎保養怎麼選才不會越弄越糟',s:'',nx:'result_prevention_basic'},
+      {ic:'☀️',t:'防曬到底要怎麼擦才夠',s:'',nx:'result_sunscreen'},
+      {ic:'🔬',t:'怎麼看懂成分表，避開天然迷思',s:'',nx:'result_ingredient'},
+    ]},
+  };
+  const RESULTS={
+    stop_product:{type:'amber',em:'⚠️',title:'立即停用可疑產品',steps:[
+      {t:'立即停用',b:'停用所有最近新添加的保養品，尤其含精油、香精的。'},
+      {t:'冷敷舒緩',b:'乾淨冷毛巾輕敷泛紅處 5 分鐘，不要摩擦。'},
+      {t:'只擦凡士林',b:'接下來 3 天只用清水洗臉，只擦純凡士林鎖水。'},
+      {t:'觀察 3 天',b:'若仍未改善或持續惡化，立即就醫。'},
+    ]},
+    see_doctor:{type:'red',em:'🏥',title:'建議盡快就醫',steps:[
+      {t:'不要忍耐',b:'持續超過 3 天未改善，自行處理會延誤治療。'},
+      {t:'看皮膚科',b:'醫師可能開立低強度外用類固醇（短期 3～5 天），安全有效。'},
+      {t:'記錄症狀',b:'就醫前拍照記錄症狀，告知所有使用中的保養品。'},
+    ]},
+    er:{type:'red',em:'🚨',title:'請盡速就醫或至急診',steps:[
+      {t:'立即就醫',b:'大範圍蔓延、伴隨發燒或呼吸困難，可能是嚴重過敏，請立即至急診。'},
+      {t:'停用所有產品',b:'等待就醫期間停止使用任何保養品。'},
+    ]},
+    result_clean:{type:'amber',em:'🌡️',title:'過熱清潔正在破壞你的屏障',steps:[
+      {t:'降低水溫',b:'改用接近體溫或更涼的水洗臉，熱水會溶解天然皮脂膜。'},
+      {t:'減少清潔次數',b:'早晨若不出油，只用清水即可，不必每次都用洗面乳。'},
+      {t:'洗後立即保濕',b:'洗臉後 30 秒內擦含神經醯胺的乳霜，避免水分蒸發。'},
+    ]},
+    result_postcare:{type:'amber',em:'🌿',title:'術後屏障脆弱，以「少」為原則',steps:[
+      {t:'STOP 暫停',b:'停用美白、酸類、去角質、精油、片狀面膜。'},
+      {t:'只用修護霜',b:'使用成分單純無香精的乳霜（含神經醯胺或純凡士林）。'},
+      {t:'嚴格防曬',b:'UVA 穿透玻璃，術後不防曬會導致嚴重色素沉澱。用物理性防曬或硬防曬。'},
+    ]},
+    result_lifestyle:{type:'amber',em:'🌙',title:'壓力與睡眠在無形中破壞屏障',steps:[
+      {t:'了解機制',b:'熬夜讓皮質醇上升，皮膚屏障修復速度下降，所有保養效果打折。'},
+      {t:'簡化保養',b:'疲憊的皮膚不需要更多刺激，只留清潔＋保濕。'},
+      {t:'改善作息',b:'盡量 12 點前入睡，這是最有效且免費的「保養品」。'},
+    ]},
+    result_moisturize:{type:'amber',em:'💧',title:'補水沒有鎖水：玻尿酸只做了一半的事',steps:[
+      {t:'了解差異',b:'玻尿酸「吸水」，乾燥環境下可能反吸皮膚底層水分，讓皮膚更乾。'},
+      {t:'加上脂質封鎖',b:'精華後必須再擦含神經醯胺的乳霜或凡士林，作為最後鎖水層。'},
+      {t:'順序很重要',b:'從最水到最油：化妝水 → 精華 → 乳液 → 乳霜，不要跳步。'},
+    ]},
+    result_environment:{type:'amber',em:'🌬️',title:'冷氣環境加速水分蒸發',steps:[
+      {t:'加強鎖水',b:'在冷氣房中，乳霜比乳液更重要，擦含神經醯胺的厚乳霜。'},
+      {t:'考慮加濕',b:'辦公室可放小型加濕器，讓環境濕度維持在 50% 以上。'},
+    ]},
+    result_overwash:{type:'red',em:'🧼',title:'過度清潔是出油的原因，不是解方',steps:[
+      {t:'了解惡性循環',b:'過度清洗 → 皮脂膜破壞 → 代償性出更多油 → 覺得需要再洗。'},
+      {t:'減少到每天 2 次',b:'只早晚各一次，早晨若不出油可只用清水。'},
+      {t:'改用溫和洗面乳',b:'弱酸性配方，讓皮脂膜有機會重建。'},
+    ]},
+    result_oily_normal:{type:'green',em:'✅',title:'清潔頻率合理，重點在補充保濕',steps:[
+      {t:'出油不代表不缺水',b:'混油肌底層常缺水，加強保濕反而能改善出油。'},
+      {t:'選清爽質地',b:'選 oil-free 或凝膠質地的保濕品，不會悶痘。'},
+    ]},
+    result_oily_ok:{type:'green',em:'✅',title:'你的清潔習慣很健康',steps:[
+      {t:'繼續維持',b:'早晨用清水洗臉是保留皮脂膜最好的方式。'},
+      {t:'注意防曬',b:'油性膚質更要注意防曬，選擇輕薄的物理性防曬。'},
+    ]},
+    result_prevention_basic:{type:'green',em:'🛡️',title:'基礎保養三步驟就夠',steps:[
+      {t:'清潔',b:'溫涼水＋弱酸性洗面乳，早晨不出油可只用清水。'},
+      {t:'保濕',b:'含神經醯胺的乳霜，鎖住水分，填補細胞間脂質。'},
+      {t:'防曬',b:'每天都要擦，不管天氣如何，這是最重要的抗老步驟。'},
+    ]},
+    result_sunscreen:{type:'green',em:'☀️',title:'防曬是最重要的抗老保養',steps:[
+      {t:'為什麼每天要擦',b:'UVA 穿透雲層與玻璃，累積性傷害是老化和色素沉澱的最大元兇。'},
+      {t:'敏感肌選物理性',b:'成分只有氧化鋅（ZnO）的防曬刺激性最低，術後或敏感期首選。'},
+      {t:'不喜歡擦就用硬防曬',b:'寬沿帽、抗UV傘同樣有效，可以和防曬乳併用。'},
+    ]},
+    result_ingredient:{type:'green',em:'🔬',title:'三個原則幫你避雷',steps:[
+      {t:'天然不等於安全',b:'植物精油、香精是最常見的接觸性過敏原，敏感肌要特別小心。'},
+      {t:'成分越少越安全',b:'受損肌只需要清潔劑、神經醯胺、凡士林，不需要十幾種成分。'},
+      {t:'無防腐劑不一定好',b:'合法添加量的防腐劑是安全的；無防腐劑若保存不當反而有菌污染風險。'},
+    ]},
+  };
+  let path=[];
+  function bc(){
+    const el=document.getElementById('dt-bc');
+    if(!path.length){el.innerHTML='';return;}
+    el.innerHTML=path.map((p,i)=>`${i>0?'<span class="dt-bc-sep">›</span>':''}<span class="dt-bc-item">${p.length>12?p.slice(0,11)+'…':p}</span>`).join('');
+  }
+  function render(key){
+    const node=TREE[key], res=RESULTS[key];
+    const area=document.getElementById('dt-area');
+    bc(); area.innerHTML='';
+    const div=document.createElement('div'); div.className='dt-step';
+    if(res){
+      const c=res.type;
+      div.innerHTML=`<div class="dt-result ${c}">
+        <div class="dt-r-head"><span class="dt-r-emoji">${res.em}</span><span class="dt-r-title">${res.title}</span></div>
+        <div class="dt-r-steps">${res.steps.map((s,i)=>`<div class="dt-r-step"><div class="dt-r-step-num">${i+1}</div><div><strong>${s.t}</strong> — ${s.b}</div></div>`).join('')}</div>
+      </div>
+      <div class="dt-btn-row">
+        <button class="dt-btn-restart" onclick="dtRestart()">← 重新評估</button>
+        <button class="dt-btn-see" onclick="scrollToSection('themes')">了解背後原理 →</button>
+      </div>`;
+    } else if(node){
+      div.innerHTML=`<div class="dt-q-box"><div class="dt-q-label">${node.label}</div><div class="dt-q-text">${node.q}</div></div>
+      <div class="dt-opts">${node.opts.map(o=>`<button class="dt-opt" onclick="dtNext('${o.nx}','${o.t.replace(/'/g,"\\'")}')"><div class="dt-opt-icon">${o.ic}</div><div><div class="dt-opt-label">${o.t}</div>${o.s?`<div class="dt-opt-sub">${o.s}</div>`:''}</div></button>`).join('')}</div>`;
+    }
+    area.appendChild(div);
+  }
+  window.dtNext=function(key,label){path.push(label);render(key);};
+  window.dtRestart=function(){path=[];render('start');};
+  render('start');
+})();
+</script>
+
+<script>
+// ── Scroll Reveal ──
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+
+
+
+// ── INTRO GUIDE TABS ──
+function switchGuide(tab) {
+  document.querySelectorAll('.gtab').forEach((t,i) => {
+    const panels = ['what','routine','traffic','mistakes','lifestyle'];
+    t.classList.toggle('on', t.getAttribute('onclick').includes("'"+tab+"'"));
+  });
+  document.querySelectorAll('.guide-panel').forEach(p => p.classList.remove('on'));
+  const target = document.getElementById('guide-' + tab);
+  if(target) target.classList.add('on');
+}
+
+// ── ROUTINE TABS ──
+function switchRoutine(tab) {
+  document.querySelectorAll('.rtab').forEach(t => {
+    t.classList.toggle('on', t.getAttribute('onclick').includes("'"+tab+"'"));
+  });
+  document.querySelectorAll('.routine-panel').forEach(p => p.classList.remove('on'));
+  const target = document.getElementById('routine-' + tab);
+  if(target) target.classList.add('on');
+}
+
+// ── SELF CHECK ──
+let checkedCount = 0;
+let checkedItems = new Set();
+function toggleCheck(el, num) {
+  if(el.classList.contains('checked')) {
+    el.classList.remove('checked');
+    checkedItems.delete(num);
+  } else {
+    el.classList.add('checked');
+    checkedItems.add(num);
+  }
+  checkedCount = checkedItems.size;
+  const result = document.getElementById('selfcheck-result');
+  if(!result) return;
+  if(checkedCount === 0) {
+    result.style.display = 'none';
+    return;
+  }
+  result.style.display = 'flex';
+  if(checkedCount >= 2) {
+    result.className = 'selfcheck-result warn';
+    result.innerHTML = '<span style="font-size:18px;flex-shrink:0;">⚠️</span><div><strong>你目前可能處於敏感狀態</strong>，建議採用「減法保養」——精簡步驟、停用刺激性成分，讓皮膚先休息穩定。往下看「日常保養流程」和「成分紅綠燈」，找到適合你的方向。</div>';
+  } else {
+    result.className = 'selfcheck-result ok';
+    result.innerHTML = '<span style="font-size:18px;flex-shrink:0;">😊</span><div><strong>目前敏感狀況不明顯</strong>，但了解正確保養觀念仍然很重要——預防比治療容易。繼續閱讀，讓皮膚維持在最佳狀態。</div>';
+  }
+}
+
+// ── READING PROGRESS + POST-TEST NUDGE ──
+(function(){
+  const fill = document.getElementById('read-progress-fill');
+  const nudge = document.getElementById('posttest-nudge');
+  let nudgeShown = false;
+  let nudgeDismissed = false;
+
+  window.addEventListener('scroll', () => {
+    // 進度條
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docH > 0 ? Math.round((window.scrollY / docH) * 100) : 0;
+    if(fill) fill.style.width = pct + '%';
+
+    // 後測提示：滑過 #themes section 底部時觸發
+    if(!nudgeShown && !nudgeDismissed && nudge){
+      const themes = document.getElementById('rules');
+      if(themes){
+        const rect = themes.getBoundingClientRect();
+        if(rect.top < window.innerHeight * 0.7){
+          nudge.style.display = 'block';
+          nudgeShown = true;
+          // 10秒後自動收起
+          setTimeout(() => {
+            if(nudge.style.display !== 'none'){
+              nudge.style.opacity = '0';
+              nudge.style.transition = 'opacity .5s';
+              setTimeout(() => { nudge.style.display = 'none'; }, 500);
+            }
+          }, 12000);
+        }
+      }
+    }
+  });
+
+  // 關閉時記錄
+  if(nudge){
+    nudge.querySelector('.nudge-close').addEventListener('click', () => {
+      nudgeDismissed = true;
+    });
+  }
+})();
+
+
+// ── MOBILE NAV ──
+function toggleMobileNav(){
+  const menu = document.getElementById('mobile-menu');
+  const overlay = document.getElementById('mobile-overlay');
+  const icon = document.getElementById('mobile-btn-icon');
+  if(!menu) return;
+  const isOpen = menu.classList.contains('open');
+  menu.classList.toggle('open', !isOpen);
+  if(overlay) overlay.classList.toggle('open', !isOpen);
+  if(icon) icon.textContent = isOpen ? '☰' : '✕';
+  document.body.style.overflow = isOpen ? '' : 'hidden';
+}
+function closeMobileNav(){
+  const menu = document.getElementById('mobile-menu');
+  const overlay = document.getElementById('mobile-overlay');
+  const icon = document.getElementById('mobile-btn-icon');
+  if(menu) menu.classList.remove('open');
+  if(overlay) overlay.classList.remove('open');
+  if(icon) icon.textContent = '☰';
+  document.body.style.overflow = '';
+}
+
+// ── Smooth scroll for all anchor links (cross-browser) ──
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const id = this.getAttribute('href').slice(1);
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    const navH = document.getElementById('nav')?.offsetHeight || 60;
+    const top = target.getBoundingClientRect().top + window.pageYOffset - navH - 12;
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
+});
+const barObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.bar-fill[data-width]').forEach(bar => {
+        const w = bar.getAttribute('data-width');
+        setTimeout(() => { bar.style.width = w + '%'; }, 200);
+      });
+      barObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.3 });
+const chartWrap = document.querySelector('.chart-wrap');
+if (chartWrap) barObserver.observe(chartWrap);
+
+// ── Accordion ──
+document.querySelectorAll('.acc-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const body = header.nextElementSibling;
+    const isOpen = header.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.acc-header').forEach(h => {
+      h.classList.remove('open');
+      h.nextElementSibling.style.maxHeight = '0';
+    });
+
+    // Open clicked if it was closed
+    if (!isOpen) {
+      header.classList.add('open');
+      body.style.maxHeight = body.scrollHeight + 'px';
+    }
+  });
+});
+
+// Open first by default
+const firstHeader = document.querySelector('.acc-header');
+if (firstHeader) {
+  firstHeader.classList.add('open');
+  firstHeader.nextElementSibling.style.maxHeight = firstHeader.nextElementSibling.scrollHeight + 'px';
+}
+</script>
+</body>
+</html>
